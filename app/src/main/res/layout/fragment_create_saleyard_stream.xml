@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/frameLayout_container"
+        style="@style/AppTheme.LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_create"
+            style="@style/AppTheme.LinearLayout.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                style="@style/AppTheme.CardView"
+                android:layout_marginTop="@dimen/vertical_item_margin">
+
+                <LinearLayout
+                    style="@style/AppTheme.LinearLayout.SubSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        style="@style/AppTheme.TextOnEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Saleyard Name" />
+
+                    <EditText
+                        android:id="@+id/et_saleyardName"
+                        style="@style/AppTheme.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter the name of the saleyard." />
+
+
+                    <TextView
+                        style="@style/AppTheme.TextOnEditView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_selectDate"
+                            style="@style/AppTheme.EditTextBoarder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Select Date" />
+
+                        <ImageView
+                            style="@style/AppTheme.IconArrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginBottom="4dp"
+                            android:rotation="90"
+                            app:srcCompat="@drawable/ic_arrow_right" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <com.theherdonline.ui.general.HerdButton
+            android:id="@+id/btn_createSaleyard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_margin_button"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/page_margin_button"
+            android:layout_marginBottom="20dp"
+            app:HerdButton_text="Create"></com.theherdonline.ui.general.HerdButton>
+    </LinearLayout>
+</layout>

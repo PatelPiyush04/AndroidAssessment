@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.ItemTitleText"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|left"
+        android:id="@+id/tv_room_name"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="Livestock Name"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center"
+        android:clipToPadding="false"
+        android:id="@+id/list"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_message">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+
+        android:background="@color/colorCardbackground"
+        android:orientation="horizontal">
+<!--    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.EditText"
+        android:background="@drawable/editview_background"
+        android:id="@+id/edit_message"
+        android:inputType="text|textMultiLine"
+        android:layout_weight="1"/>-->
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            android:textSize="14dp"
+            android:background="@drawable/background_send_message"
+            android:hint="@string/txt_new_message"
+            android:inputType="text"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_weight="1"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/colorButton"
+            android:id="@+id/sendMessage"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_button_send" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.theherdonline.db.entity.StreamType" />
+
+        <variable
+            name="type"
+            type="StreamType" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_livestock_item"
+            layout="@layout/item_livestock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/include_saleyard_item"
+            layout="@layout/item_saleyard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/include_post_item"
+            layout="@layout/item_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:visibility="gone"
+            android:id="@+id/tv_last_data_label"
+            android:text="@string/txt_no_more_data"/>
+
+    </LinearLayout>
+
+
+</layout>

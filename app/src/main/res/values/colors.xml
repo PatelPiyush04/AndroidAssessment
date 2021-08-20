@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorDarkBlue">#284859</color>
+    <color name="colorLightGreen">#00CC00</color>
+
+
+    <color name="colorPrimary">@color/colorDarkBlue</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorAccent">@color/colorDarkBlue</color>
+    <color name="colorSecondAccent">#284859</color>
+
+    <color name="colorIcon">@color/colorLightGreen</color>
+    <color name="colorIconBlue">#006de0</color>
+
+    <color name="colorTextWhite">#ffffff</color>
+
+    <color name="colorTextGray">#858585</color>
+    <color name="colorTextDark">@color/colorSecondAccent</color>
+    <color name="colorListDivider">#f2f2f2</color>
+    <color name="colorRadioChecked">@color/colorLightGreen</color>
+    <color name="colorRadioUnChecked">@android:color/white</color>
+    <color name="colorTintSymbol">@android:color/black</color>
+    <color name="colorTintEditBottomLine">#f3f3f3</color>
+    <color name="colorFacebookBlue">#3b5998</color>
+
+
+
+
+    <color name="colorNotificationIcon">@color/colorLightGreen</color>
+    <color name="colorThemePurple">#876ab5</color>
+
+
+    <color name="colorText">@android:color/black</color>
+
+    <color name="colorTextOnButton">@android:color/white</color>
+    <color name="colorButton">@color/colorIcon</color>
+    <color name="colorTint">@color/colorIcon</color>
+    <color name="colorToolBarIconTint">@android:color/white</color>
+    <color name="colorSavedIconTint">@android:color/holo_orange_light</color>
+
+
+
+    <color name="colorToolbarBackground">#017e8b</color>
+    <color name="colorToolbarText">@color/colorTextWhite</color>
+
+    <color name="colorMainbackground">#f3f3f3</color>
+    <color name="colorCardbackground">@android:color/white</color>
+
+
+
+    <color name="cornflower_blue">#6274e2</color>
+    <color name="cornflower_blue_dark">#303F9F</color>
+    <color name="cornflower_blue_darkest">#2d3a93</color>
+    <color name="gray">#ebebeb</color>
+    <color name="gray_light">#e8e8e8</color>
+    <color name="gray_transparent">#a6efefef</color>
+    <color name="gray_dark">#858585</color>
+    <color name="gray_dark_transparent">#ae858585</color>
+    <color name="gray_darkest">#ae282828</color>
+    <color name="black">#000000</color>
+    <color name="black_10">#19000000</color>
+    <color name="ivory">#f8efe6</color>
+    <color name="ivory_dark">#f7e8d9</color>
+    <color name="green">#38be55</color>
+    <color name="green_dark">#2da346</color>
+    <color name="red">#e94f4f</color>
+    <color name="videoTimer">#9E0000</color>
+    <color name="brown">#4e342e</color>
+
+
+</resources>

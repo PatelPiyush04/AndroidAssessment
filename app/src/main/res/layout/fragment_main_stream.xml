@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:name="au.twomatesmedia.theherd.ui.main.AdvertisementFragment"
+        tools:context="com.theherdonline.ui.main.AdvertisementFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tool_bar_height"
+                android:background="@color/colorToolbarBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/AppTheme.ToolbarText"
+                    android:text="@string/txt_my_ads"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/imageView_add_advertise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+            </FrameLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_ad_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_requests"
+                    style="@style/AppTheme.RadioText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_background"
+                    android:button="@drawable/radio_background"
+                    android:checked="true"
+                    android:text="@string/txt_request" />
+
+                <RadioButton
+                    android:id="@+id/radio_current"
+                    style="@style/AppTheme.RadioText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_background"
+                    android:button="@drawable/radio_background"
+                    android:checked="false"
+                    android:text="@string/txt_current" />
+
+                <RadioButton
+                    android:id="@+id/radio_post"
+                    style="@style/AppTheme.RadioText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_background"
+                    android:button="@drawable/radio_background"
+                    android:text="@string/txt_past" />
+
+            </RadioGroup>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/swiperefresh">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_livestock" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/frameLayout_progressBar">
+            <ProgressBar
+                android:id="@+id/progressBar_update"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Small"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</layout>

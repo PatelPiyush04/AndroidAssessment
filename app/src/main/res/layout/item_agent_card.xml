@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_item_margin"
+        style="@style/AppTheme.SaleyardCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_agent_name"
+                android:textColor="@color/colorDarkBlue"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:text="Agent Name"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:id="@+id/image_organisation"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.theherdonline.ui.general.HerdButton
+                    android:id="@+id/button_call_organisation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/page_margin_button"
+                    android:layout_marginRight="@dimen/page_margin_button"
+                    android:layout_weight="1"
+                    app:HerdButton_icon="@drawable/ic_button_inline_call"
+                    app:HerdButton_text="@string/txt_call_agent">
+
+                </com.theherdonline.ui.general.HerdButton>
+
+
+                <com.theherdonline.ui.general.HerdButton
+                    android:id="@+id/button_msg_organisation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/page_margin_button"
+                    android:layout_marginRight="@dimen/page_margin_button"
+                    android:visibility="gone"
+                    app:HerdButton_icon="@drawable/ic_button_inline_chat"
+                    app:HerdButton_text="@string/txt_sms_agent">
+
+                </com.theherdonline.ui.general.HerdButton>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

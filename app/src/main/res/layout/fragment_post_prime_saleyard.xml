@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_toolbar"
+            layout="@layout/item_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:visibility="gone" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="1">
+
+            <LinearLayout
+                style="@style/AppTheme.LinearLayout.Section"
+                android:paddingTop="@dimen/card_margin_vertical">
+
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_part1"
+                        style="@style/AppTheme.LinearLayout.SubSection">
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_title" />
+
+                        <EditText
+                            android:id="@+id/edit_title"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_title" />
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_start_date" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_start_date"
+                                style="@style/AppTheme.EditTextBoarder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_select_start_date" />
+
+                            <ImageView
+                                style="@style/AppTheme.IconArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginBottom="4dp"
+                                android:rotation="90"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+                        </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_location" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_choose_a_location"
+                                style="@style/AppTheme.EditTextBoarder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_select_location" />
+
+                            <ImageView
+                                style="@style/AppTheme.IconArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginBottom="4dp"
+                                android:rotation="90"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView"
+                    android:layout_marginTop="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_part2"
+                        style="@style/AppTheme.LinearLayout.SubSection">
+
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_total_head" />
+
+
+                        <EditText
+                            android:id="@+id/edit_total_head"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_total_head"
+                            android:inputType="number" />
+
+
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_category" />
+
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_spinner_category"
+                                style="@style/AppTheme.EditTextBoarder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_select_category" />
+
+                            <ImageView
+                                style="@style/AppTheme.IconArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginBottom="4dp"
+                                android:rotation="90"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+                        </FrameLayout>
+
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_sale_numbers" />
+
+
+                        <EditText
+                            android:id="@+id/edit_sale_number"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_type_sale_numbers" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView"
+                    android:id="@+id/card_draw_image"
+                    android:layout_marginTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <LinearLayout style="@style/AppTheme.LinearLayout.SubSection"
+                        android:paddingBottom="16dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|left"
+                                android:layout_margin="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/txt_attach_draw" />
+
+                            <ImageView
+                                android:id="@+id/image_delete_draw"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/ic_button_deleteimage" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linear_draw_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:background="@drawable/circle_green"
+                                app:srcCompat="@drawable/ic_stream" />
+                            <TextView
+                                android:id="@+id/tv_attach_hints"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center_vertical|left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_attach_draw"/>
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/image_draw_picture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="center"
+                            />
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    style="@style/AppTheme.CardView"
+                    android:id="@+id/cart_note"
+                    android:layout_marginTop="10dp"
+                    app:cardUseCompatPadding="false">
+
+                    <LinearLayout style="@style/AppTheme.LinearLayout.SubSection">
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_notes" />
+
+
+                        <EditText
+                            android:id="@+id/edit_notes"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_notes_hints" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    style="@style/AppTheme.CardView"
+                    android:layout_marginTop="10dp"
+                    app:cardUseCompatPadding="false">
+
+                    <LinearLayout
+                        android:id="@+id/constraint_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_image"
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/txt_images_video"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/item_photo">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <com.theherdonline.ui.general.HerdButton
+                    android:id="@+id/button_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/page_margin_button"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/page_margin_button"
+                    android:layout_marginBottom="30dp"
+                    app:HerdButton_icon="@drawable/button_confirm"
+                    app:HerdButton_text="@string/txt_confirm" />
+
+
+
+
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_toolbar"
+            layout="@layout/item_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:visibility="gone" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    style="@style/AppTheme.SaleyardCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_margin_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/page_margin_left"
+
+                        android:paddingRight="@dimen/page_margin_right"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_location" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_choose_a_location"
+                                style="@style/AppTheme.EditTextBoarder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_choose_a_location" />
+
+                            <ImageView
+                                style="@style/AppTheme.IconArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginBottom="4dp"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_use_current_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                style="@style/AppTheme.Icon"
+                                android:tint="@color/colorIcon"
+                                app:srcCompat="@drawable/ic_address" />
+
+                            <TextView
+                                android:id="@+id/tv_use_current_location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|left"
+                                android:gravity="left|center_vertical"
+                                android:text="@string/txt_use_current_location"
+                                android:textAlignment="gravity"
+                                android:textColor="@color/colorIcon" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_radius"
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_search_radius" />
+
+                        <EditText
+                            android:id="@+id/edit_distance"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_set_search_radius"
+                            android:inputType="numberDecimal" />
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_animal" />
+
+                            <FrameLayout
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="0dp"
+                                android:paddingBottom="5dp">
+
+                                <Spinner
+                                    android:id="@+id/spinner_select_animal"
+                                    style="@style/AppTheme.Spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    style="@style/AppTheme.IconArrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:rotation="90"
+                                    app:srcCompat="@drawable/ic_arrow_right" />
+                            </FrameLayout>
+
+
+                            <TextView
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_breed" />
+
+                            <FrameLayout
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="0dp"
+                                android:paddingBottom="5dp">
+
+                                <Spinner
+                                    android:id="@+id/spinner_select_breed"
+                                    style="@style/AppTheme.Spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    style="@style/AppTheme.IconArrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:rotation="90"
+                                    app:srcCompat="@drawable/ic_arrow_right" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/tv_gender"
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_gender" />
+
+                            <FrameLayout
+                                android:id="@+id/frameLayout_gender"
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="0dp"
+                                android:paddingBottom="5dp">
+
+                                <Spinner
+                                    android:id="@+id/spinner_select_sex"
+                                    style="@style/AppTheme.Spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    style="@style/AppTheme.IconArrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:rotation="90"
+                                    app:srcCompat="@drawable/ic_arrow_right" />
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:id="@+id/tv_pregnancy"
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_pregnancy_status" />
+
+                            <FrameLayout
+                                android:id="@+id/frameLayout_pregnancy"
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="0dp"
+                                android:paddingBottom="5dp"
+
+                                >
+
+                                <Spinner
+                                    android:id="@+id/spinner_pregnancy"
+                                    style="@style/AppTheme.Spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    style="@style/AppTheme.IconArrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:rotation="90"
+                                    app:srcCompat="@drawable/ic_arrow_right" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_price_dollar" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edit_price_min"
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/horizontal_item_margin"
+                                android:layout_weight="1"
+                                android:hint="@string/txt_min"
+                                android:inputType="numberDecimal" />
+
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@android:color/darker_gray" />
+
+
+                            <EditText
+                                android:id="@+id/edit_price_max"
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/horizontal_item_margin"
+                                android:layout_weight="1"
+                                android:hint="@string/txt_max"
+                                android:inputType="numberDecimal" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_weight_average_kg" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edit_weight_min"
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginRight="@dimen/horizontal_item_margin"
+                                android:layout_weight="1"
+                                android:hint="@string/txt_min"
+                                android:inputType="numberDecimal" />
+
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@android:color/darker_gray" />
+
+                            <EditText
+                                android:id="@+id/edit_weight_max"
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/horizontal_item_margin"
+                                android:layout_weight="1"
+                                android:hint="@string/txt_max"
+                                android:inputType="numberDecimal" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_min_age" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edit_age_min"
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginRight="@dimen/horizontal_item_margin"
+                                android:layout_weight="1"
+                                android:hint="@string/txt_min"
+                                android:inputType="number" />
+
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@android:color/darker_gray" />
+
+                            <EditText
+                                android:id="@+id/edit_age_max"
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="@dimen/horizontal_item_margin"
+                                android:layout_weight="1"
+                                android:hint="@string/txt_max"
+                                android:inputType="number" />
+
+                            <FrameLayout
+                                android:id="@+id/frameLayout_age_unit"
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center_horizontal"
+                                android:layout_marginLeft="10dp"
+                                android:paddingTop="0dp"
+                                android:paddingBottom="5dp">
+
+                                <Spinner
+                                    android:id="@+id/spinner_select_age_unit"
+                                    style="@style/AppTheme.Spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:spinnerMode="dropdown" />
+
+                                <ImageView
+                                    style="@style/AppTheme.IconArrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:rotation="90"
+                                    app:srcCompat="@drawable/ic_arrow_right" />
+                            </FrameLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <com.theherdonline.ui.general.HerdButton
+                    android:id="@+id/button_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/page_margin_button"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/page_margin_button"
+                    android:layout_marginBottom="@dimen/page_margin_bottom"
+                    app:HerdButton_icon="@drawable/ic_button_inline_filter"
+                    app:HerdButton_text="@string/txt_filter"></com.theherdonline.ui.general.HerdButton>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

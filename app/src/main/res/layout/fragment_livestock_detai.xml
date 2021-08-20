@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:HerdButton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_item_margin"
+                android:divider="@drawable/list_item_divider"
+                android:dividerPadding="0dp"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:showDividers="middle">
+
+
+                <androidx.cardview.widget.CardView
+                    style="@style/AppTheme.SaleyardCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/constraintLayout_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            style="@style/AppTheme.ItemTitleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:gravity="left|center_vertical"
+                            android:minLines="1"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="50 Good quality"
+                            android:textAlignment="gravity"
+                            android:textSize="18sp" />
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/list_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_below="@+id/tv_title"
+                            android:background="@color/colorMainbackground"></androidx.viewpager.widget.ViewPager>
+
+                        <ImageView
+                            android:id="@+id/image_no_available_picture"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_below="@+id/tv_title"
+                            android:adjustViewBounds="false"
+                            android:background="@color/colorCardbackground"
+                            android:cropToPadding="false"
+                            android:padding="40dp"
+                            android:scaleType="fitCenter"
+                            android:tint="@android:color/darker_gray"
+                            android:visibility="visible"
+                            app:srcCompat="@drawable/tho_logo_small" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ll_offerViews"
+                            android:layout_width="170dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            HerdButton:cardCornerRadius="5dp">
+
+                            <TextView
+                               android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/offer_bg"
+                                android:padding="10dp"
+                                android:gravity="right"
+                                android:textAllCaps="true"
+                                android:text="Under Offer"
+                                android:textColor="@color/colorTextWhite"
+                                android:textSize="22dp" />
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_make_a_bid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_item_margin">
+
+                    <LinearLayout
+                        android:id="@+id/linear_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_bid_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="700"
+                            android:textColor="@color/colorDarkBlue"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <com.theherdonline.ui.general.HerdButton
+                            android:id="@+id/button_bid_to_offer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/page_margin_button"
+                            android:layout_marginRight="@dimen/page_margin_button"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="gone"
+                            HerdButton:HerdButton_icon="@drawable/ic_button_inline_makebid"
+                            HerdButton:HerdButton_text="@string/txt_make_bid"></com.theherdonline.ui.general.HerdButton>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    style="@style/AppTheme.SaleyardCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_item_margin">
+
+                    <LinearLayout
+                        style="@style/AppTheme.LinearLayoutInfoCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/vertical_item_padding"
+                            android:layout_marginRight="@dimen/vertical_item_padding">
+
+                            <TextView
+                                android:id="@+id/tv_sale_type"
+                                style="@style/AppTheme.SaleyardTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/background_label"
+                                android:includeFontPadding="false"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/txt_paddock_sale"
+                                android:textSize="14dp" />
+
+
+                            <ImageView
+                                android:id="@+id/image_saved"
+                                style="@style/AppTheme.Icon.saved"
+                                android:layout_gravity="center_vertical|right"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/ic_saved" />
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/page_margin_left"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp">
+
+                            <ImageView
+                                android:id="@+id/imageView_quantity"
+                                style="@style/AppTheme.Icon"
+                                app:srcCompat="@drawable/ic_quantity" />
+
+                            <TextView
+                                android:id="@+id/tv_quantity"
+                                style="@style/AppTheme.ItemContentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_animal_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/page_margin_left"
+                            android:paddingTop="4dp"
+
+                            android:paddingBottom="4dp">
+
+                            <ImageView
+                                android:id="@+id/imageView_animal_symbol"
+                                style="@style/AppTheme.Icon"
+                                app:srcCompat="@drawable/ic_quantity" />
+
+                            <TextView
+                                android:id="@+id/tv_animal"
+                                style="@style/AppTheme.ItemContentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/page_margin_left"
+                            android:paddingTop="@dimen/vertical_item_padding"
+
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <ImageView
+                                android:id="@+id/imageView_location"
+                                style="@style/AppTheme.Icon"
+                                app:srcCompat="@drawable/ic_address" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_location"
+                                    style="@style/AppTheme.ItemContentText"
+                                    android:text="" />
+
+                                <TextView
+                                    android:id="@+id/tv_distance"
+                                    style="@style/AppTheme.ItemContentText"
+                                    android:paddingTop="-5dp"
+                                    android:text=""
+                                    android:textColor="@android:color/darker_gray" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_expires"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/page_margin_left"
+                            android:paddingTop="@dimen/vertical_item_padding"
+
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <ImageView
+                                android:id="@+id/imageView_expires"
+                                style="@style/AppTheme.Icon"
+                                app:srcCompat="@drawable/ic_icon_expiry" />
+
+                            <TextView
+                                android:id="@+id/tv_expires"
+                                style="@style/AppTheme.ItemContentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/AppTheme.SaleyardCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_item_margin">
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        style="@style/AppTheme.ItemContentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:text="15" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_livestock_detail"
+                    style="@style/AppTheme.SaleyardCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_item_margin">
+
+                    <LinearLayout
+                        style="@style/AppTheme.LinearLayoutInfoCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_availableInfoView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="@string/txt_available_date" />
+
+                            <TextView
+                                android:id="@+id/tv_info_available"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_pickUpVIew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="Pick Up" />
+
+                            <TextView
+                                android:id="@+id/tv_pickUp"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_sex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="@string/txt_gender" />
+
+                            <TextView
+                                android:id="@+id/tv_sex"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_pregnant"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="@string/txt_pregnancy_status" />
+
+                            <TextView
+                                android:id="@+id/tv_pregnancy"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_minAgeView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="@string/txt_min_age" />
+
+                            <TextView
+                                android:id="@+id/tv_min_age"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_maxAgeView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="@string/txt_max_age" />
+
+                            <TextView
+                                android:id="@+id/tv_max_age"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_averageAgeView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="@string/txt_average_age" />
+
+                            <TextView
+                                android:id="@+id/tv_average_age"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_weightMinView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="@string/txt_weight_min" />
+
+                            <TextView
+                                android:id="@+id/tv_weight_min"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_weightMaxView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="@string/txt_weight_max" />
+
+                            <TextView
+                                android:id="@+id/tv_weight_max"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_weightAverage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="@string/txt_weight_average" />
+
+                            <TextView
+                                android:id="@+id/tv_weight_average"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_accessbyView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:layout_width="match_parent"
+                                android:text="@string/accessed_by" />
+
+                            <TextView
+                                android:id="@+id/tv_accesedBy"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="name" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_other_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:layout_width="match_parent"
+                                android:text="@string/txt_other_information" />
+
+                            <TextView
+                                android:id="@+id/tv_other_information"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:layout_gravity="left|top"
+                                android:text="weighted, slo" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_item_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/txt_have_a_question"
+                            android:textColor="@color/colorDarkBlue"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <com.theherdonline.ui.general.HerdButton
+                            android:id="@+id/button_ask_a_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginBottom="10dp"
+                            HerdButton:HerdButton_icon="@drawable/ic_button_inline_chat"
+                            HerdButton:HerdButton_text="@string/txt_chat_with_agent"></com.theherdonline.ui.general.HerdButton>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_auction_detail"
+                    style="@style/AppTheme.SaleyardCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_item_margin">
+
+                    <LinearLayout
+                        style="@style/AppTheme.LinearLayoutInfoCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linear_auction_animal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal"
+                            android:paddingTop="4dp"
+
+                            android:paddingBottom="4dp">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="Animal" />
+
+                            <TextView
+                                android:id="@+id/tv_auction_animal"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_auction_breed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="Breed" />
+
+                            <TextView
+                                android:id="@+id/tv_auction_breed"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_auction_sex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="Sex" />
+
+                            <TextView
+                                android:id="@+id/tv_auction_sex"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linear_auction_average_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="Average Weight" />
+
+                            <TextView
+                                android:id="@+id/tv_auction_average_weight"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_auction_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:text="Age" />
+
+                            <TextView
+                                android:id="@+id/tv_auction_age"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:text="1" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_auction_certifications"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                style="@style/AppTheme.ItemContentSubTitleText"
+                                android:layout_width="match_parent"
+                                android:text="Certifications" />
+
+                            <TextView
+                                android:id="@+id/tv_auction_certifications"
+                                style="@style/AppTheme.ItemContentSubText"
+                                android:layout_gravity="left|top"
+                                android:text="" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_auction_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_item_margin">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/image_angent_logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            HerdButton:layout_constraintEnd_toEndOf="parent"
+                            HerdButton:layout_constraintStart_toStartOf="parent"
+                            HerdButton:layout_constraintTop_toTopOf="parent" />
+
+                        <com.theherdonline.ui.general.HerdButton
+                            android:id="@+id/button_go_to_auction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+
+                            android:layout_marginBottom="15dp"
+                            HerdButton:HerdButton_icon="@drawable/button_arrow"
+                            HerdButton:HerdButton_text="@string/txt_view_on_auctions_plus"
+                            HerdButton:layout_constraintBottom_toBottomOf="@+id/image_angent_logo"
+                            HerdButton:layout_constraintEnd_toEndOf="parent"
+                            HerdButton:layout_constraintStart_toStartOf="parent"></com.theherdonline.ui.general.HerdButton>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_map"
+                    style="@style/AppTheme.SaleyardCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_item_margin">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:addStatesFromChildren="false">
+
+                        <fragment
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="0dp"
+
+                            app:layout_constraintDimensionRatio="w,1:2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_location_not_available"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_location_not_available"
+
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toBottomOf="@id/map"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0.5dp"
+                            android:background="@android:color/darker_gray"
+                            HerdButton:layout_constraintBottom_toBottomOf="parent"
+                            HerdButton:layout_constraintEnd_toEndOf="parent"
+                            HerdButton:layout_constraintStart_toStartOf="parent"></View>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_agent"
+                    android:visibility="gone"
+                    style="@style/AppTheme.SaleyardCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_item_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_agent_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:text="Agent Name"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/colorDarkBlue"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:id="@+id/image_organisation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="50dp"
+
+                            android:layout_marginBottom="25dp"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:scaleType="fitCenter" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.theherdonline.ui.general.HerdButton
+                                android:id="@+id/button_call_organisation"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                android:layout_weight="1"
+                                app:HerdButton_icon="@drawable/ic_button_inline_call"
+                                app:HerdButton_text="@string/txt_call_agent">
+
+                            </com.theherdonline.ui.general.HerdButton>
+
+
+                            <com.theherdonline.ui.general.HerdButton
+                                android:id="@+id/button_msg_organisation"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                android:layout_weight="1"
+                                android:visibility="gone"
+                                app:HerdButton_icon="@drawable/ic_button_inline_chat"
+                                app:HerdButton_text="@string/txt_sms_agent">
+
+                            </com.theherdonline.ui.general.HerdButton>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

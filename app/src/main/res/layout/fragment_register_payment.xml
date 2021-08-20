@@ -1,0 +1,173 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">-->
+
+        <!--<FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.ToolbarText"
+                android:layout_gravity="center"
+                android:text="@string/txt_add_a_card" />
+
+            <View
+                style="@style/AppTheme.HorizontalLine"/>
+
+        </FrameLayout>-->
+
+<!--        <include
+            android:id="@+id/include_toolbar"
+            layout="@layout/item_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_height" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_item_margin"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/page_margin_left"
+                android:paddingRight="@dimen/page_margin_right"
+                android:paddingBottom="15dp"
+                android:background="@color/colorCardbackground">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.TextOnEditView"
+                android:text="@string/txt_card_name"/>
+
+            <EditText
+                android:id="@+id/editText_card_name"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_name_on_card"
+                android:inputType="text|textPersonName"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.TextOnEditView"
+                android:text="@string/txt_card_number"/>
+            <EditText
+                android:id="@+id/editText_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.EditText"
+                android:hint="@string/txt_card_number"
+                android:inputType="number"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/AppTheme.TextOnEditView"
+                        android:text="@string/txt_expiry_month"/>
+
+                    <EditText
+                        android:id="@+id/editText_exp_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/AppTheme.EditText"
+                        android:inputType="number"
+
+                        android:hint="MM"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/AppTheme.TextOnEditView"
+                        android:text="@string/txt_expiry_year"/>
+
+                    <EditText
+                        android:id="@+id/editText_exp_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        style="@style/AppTheme.EditText"
+                        android:hint="YY"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.TextOnEditView"
+                android:text="@string/txt_cvv"/>
+
+            <EditText
+                android:id="@+id/editText_cvv"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_card_cvv"
+                android:inputType="number"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+            <com.theherdonline.ui.general.HerdButton
+                android:id="@+id/button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/page_margin_button"
+                android:layout_marginRight="@dimen/page_margin_button"
+                android:layout_marginTop="15dp"
+                app:HerdButton_icon="@drawable/ic_button_new"
+                app:HerdButton_text="@string/txt_add_card" />
+
+
+
+        </LinearLayout>
+
+<!--    </LinearLayout>-->
+
+</layout>

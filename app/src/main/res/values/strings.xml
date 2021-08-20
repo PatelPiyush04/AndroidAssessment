@@ -1,0 +1,1089 @@
+<resources>
+    <string name="app_name">The Herd</string>
+    <string name="share_disc_name">your-symbology</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_di">DiActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_Flash">FlashActivity</string>
+
+    <!--
+     // for dev
+    <string name="facebook_app_id">277568572958365</string>
+    <string name="fb_login_protocol_scheme">fb277568572958365</string>
+-->
+
+
+    <string name="facebook_app_id">429950714217173</string>
+    <string name="fb_login_protocol_scheme">fb429950714217173</string>
+
+    <string name="txt_mark_as_sold">Mark as Sold</string>
+    <string name="txt_enter_sale_price">Enter Sale Price</string>
+
+
+    <string name="txt_are_you_sure_delete_credit">Are you sure you want to delete the card ending with %s?</string>
+    <string name="txt_are_you_sure_delete_post">Are you sure you want to delete this post %s?</string>
+    <string name="txt_are_you_sure_delete_market_report">Are you sure you want to delete this market report: %s ?</string>
+
+
+    <string name="title_tab_search">Search</string>
+    <string name="title_tab_home">Home</string>
+    <string name="title_tab_my_herd">My Herd</string>
+    <string name="title_alert">Alert</string>
+
+
+    <string name="txt_card_name">Card Name</string>
+    <string name="txt_expiry_month">Expiry Month</string>
+    <string name="txt_expiry_year">Expiry Year</string>
+    <string name="txt_cvv">CVV</string>
+
+
+    <string name="title_tab_myad">My Ads</string>
+    <string name="title_tab_reports">Reports</string>
+    <string name="title_tab_stream">Stream</string>
+    <string name="title_tab_me">Me</string>
+
+    <string name="txt_unknown_error_try_again">Unknown server error.Please try again.</string>
+
+    <string name="title_unknown">Unknown</string>
+    <string name="title_n_a">N/A</string>
+    <string name="txt_create_post">Create Post</string>
+
+    <string name="txt_n_a">N/A</string>
+    <string name="txt_choose_attach_image">Upload an Image</string>
+
+
+    <string name="txt_post_content">Post content</string>
+
+    <string name="txt_your_post_has_been_created">Your post has been created.</string>
+
+    <string name="txt_account">Account</string>
+
+    <string name="txt_edit_ad">Edit Ad</string>
+
+    <string name="txt_edit_account">Edit Account Details</string>
+    <string name="txt_payment_details">Payment Details</string>
+
+    <string name="txt_sale_date_s">Sale Date: %s</string>
+    <string name="txt_report_date">Report Date: %s</string>
+    <string name="txt_report_by">Report by: %s</string>
+
+
+    <string name="txt_no_media_for_this">Sorry, this item does not have media.</string>
+    <string name="txt_register_successfully">Your account is created successfully.</string>
+
+
+    <string name="txt_your_profile_is_updated">Your profile is updated.</string>
+
+    <string name="txt_no_phone_number">Sorry, this user\'s phone number is unknown.</string>
+    <string name="txt_no_email_address">Sorry, this user\'s email address is unkonw.</string>
+
+    <string name="txt_livestock">Livestock</string>
+
+    <string name="txt_audio_failed">Something is wrong when playing audio.</string>
+
+    <string name="txt_fail_to_verify_card">Failed to verify card.</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_ball">BallActivity</string>
+
+    <string name="txt_play_after_finish_record">Cannot play when recording.</string>
+    <string name="txt_record_after_finish_play">Cannot record when playing.</string>
+    <string name="txt_no_audio_file">Record an audio before playing</string>
+
+    <string name="txt_stop_playing">Stop playing before publishing your market report.</string>
+    <string name="txt_stop_recording">Stop recording before publishing your market report.</string>
+
+    <string name="txt_payment">Payment</string>
+
+
+    <string name="txt_refreshing">Refreshing</string>
+
+    <string name="txt_unknown_address">Unknown address</string>
+
+    <string name="txt_producer">Producer</string>
+
+    <string name="txt_address_optional">Address(optional)</string>
+    <string name="txt_phone_number_optional">Phone Number(optional)</string>
+    <string name="txt_are_you_an_organisation">Are you an organisation?</string>
+
+    <string name="txt_organisation_name">Organisation Name</string>
+    <string name="txt_phone_number">Phone Number</string>
+    <string name="txt_organisation_email">Organisation Email</string>
+
+
+    <string name="profile">What\'s your symbology profile? Express yourself with symbols &amp; find people like you.</string>
+    <string name="library">LIBRARY</string>
+    <string name="background">BACKGROUND</string>
+
+    <string name="warning_dialog_title">The Herd</string>
+    <string name="warning_dialog_network_error">Network Error</string>
+
+    <string name="warning_dialog_server_error_num">Server Error %d</string>
+
+
+    <string name="back_to_main">Back to Main Menu?</string>
+    <string name="your_progress_will_be_lost">Your process will be lost.</string>
+    <string name="your_disc_will_be_lost">Your disc will be lost, Make sure you\'ve saved it!</string>
+    <string name="txt_allow_to_get_your_location">Please allow the-herd to access your location to search the advertisements near to you.
+        \nClick Allow to retrieve your location.
+        \nClick Deny to make a rough search without your location info.</string>
+
+    <string name="txt_setting_location">
+        You did not pick up an address. You can:
+        \n1. Click Allow to search items near your current location.
+        \n2. Click Skip to search all available items.</string>
+
+
+    <string name="txt_setting">Setting</string>
+
+    <string name="txt_allow">Allow</string>
+    <string name="txt_deny">Deny</string>
+    <string name="txt_skip">Skip</string>
+
+    <string name="txt_draft">Draft</string>
+    <string name="txt_rejected">Rejected</string>
+    <string name="txt_scheduled">Scheduled</string>
+    <string name="txt_published">Published</string>
+
+    <string name="txt_price_cannot_lower_than">You bid price cannot lower than %s.</string>
+    <string name="txt_bid_error">You cannot bid your own item.</string>
+
+    <string name="txt_reserve_price">Reserve Price</string>
+
+
+    <string name="txt_price">Price</string>
+    <string name="txt_price_dollar">Price ($)</string>
+
+
+    <string name="txt_date">Date</string>
+
+    <string name="txt_load_paddock_sale">Load Paddock Sale</string>
+    <string name="txt_load_prime_saleyard">Load Prime Saleyard</string>
+    <string name="txt_load_store_slash_feature_saleyard">Load Store/Feature Saleyard</string>
+    <string name="txt_load_market_report">Load Market Report</string>
+
+
+    <string name="your_">Your disc will be lost. Make sure you\'ve saved it!</string>
+
+
+    <string name="disc_meaning">What your disc means</string>
+    <string name="choose_your_background">Choose your background</string>
+    <string name="your_symbology_disc">YOUR SYMBOLOGY DISC</string>
+    <string name="got_it">Got it</string>
+
+    <string name="prompt_read_permission">Would you like to permit this app to read files?</string>
+    <string name="permission_request">Permission Request</string>
+    <string name="permission_request_audio">Permission Request. Allow this  App to access your microphone?</string>
+    <string name="txt_permission_warning_audio">This permission allows you to record your voice. \n\nHit \'SETTING\' to set it.</string>
+
+    <string name="permission_request_camera">Permission Request. Allow this  App to access your Camera?</string>
+    <string name="txt_permission_warning_camera">This permission allows you to record video for your live stream.</string>
+
+
+    <string name="permission_request_storage">Permission Request. Allow this  App to access your storage?</string>
+    <string name="txt_permission_warning_storage">This permission allows you to pick up photos or videos from your local gallery, like changing your avatar, adding photos to advertisement, etc.\n\nHit \'SETTING\' to set it.</string>
+
+
+    <string name="permission_request_location">Permission Request. Allow this App to access your location?</string>
+
+    <string name="storage_is_denied">Storage permission was denied before. Please approve it in the phone\'s setting panel.\n\n
+    Storage permission is required to save your disc into your album.</string>
+
+
+    <string name="txt_permission_warning">Storage permission is required.\nPlease approve the storage permission from this phone\'s setting panel.</string>
+
+    <string name="location_is_denied">This allows us to use your location to provide you certain features like showing the livestock\'s distance, searching livestock or entitySaleyard around you.\n\nHit \'SETTING\' to set it.</string>
+
+    <string name="audio_record_is_denied">Audio Record permission was denied before.Please approve it in this phone\'s setting panel or skip this step.\n\n
+    Audio Record permission is required to record audio.</string>
+
+    <string name="desc_tour1">Express who you are by creating your own personalized symbology disc &amp; upload as your profile image to social media</string>
+    <string name="desc_tour2">Complete the questions in 7 categories: Personality, Life Focus, Career, Social, Leisure, Environment &amp; Food</string>
+    <string name="desc_tour3">Learn all 94 symbols from the library to interpret others\' symbology discs</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tour">TourActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <!-- Strings related to login -->
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_start_time_later_than_end_time">Start time cannot be later than end time.</string>
+    <string name="error_no_agent_id">An agent is required to publish an advertisement.</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <string name="error_no_more_data">No more data</string>
+    <string name="txt_contact">Contact</string>
+    <string name="txt_add_a_card">Add a Card</string>
+
+    <string name="txt_ask_a_question">Ask a Question</string>
+
+    <string name="txt_bid_to_offer">Bid to Offer</string>
+
+    <string name="txt_contact_agent">Contact Agent</string>
+    <string name="txt_search_term_here">Search Term Here</string>
+    <string name="txt_submit_bid">Submit Bid</string>
+    <string name="txt_make_bid">Make a bid</string>
+    <string name="txt_market_report">Market Reports</string>
+
+    <string name="txt_view_sale_draw">View Sale Draw</string>
+
+
+    <string name="txt_input_search_distance">Input search distance</string>
+
+    <string name="txt_set_search_radius">Set Search Radius</string>
+    <string name="txt_set_animal_type">Set Animal Type</string>
+    <string name="txt_what_are_you_selling">What are you selling?</string>
+
+
+    <string name="txt_enter_title">Enter Title</string>
+    <string name="txt_start_date">Start Date</string>
+
+
+    <string name="txt_enter_saleyard_title">Enter Saleyard Title</string>
+    <string name="txt_enter_description">Enter Description</string>
+    <string name="txt_select_start_date">Select Start Date</string>
+
+
+    <string name="txt_enter_reserve_price">Enter Price</string>
+    <string name="txt_enter_total_number">Enter Total Numbers(Head)</string>
+
+
+    <string name="txt_saleyard_title">Saleyard Title</string>
+
+    <string name="txt_saleyard_title_is_required">Saleyard title is required.</string>
+    <string name="txt_total_numbers">Total Numbers(Head)</string>
+
+
+    <string name="txt_sale_date">Sale Date</string>
+
+    <string name="txt_num_head">%d Head</string>
+
+    <string name="txt_zero_doll">$0.00</string>
+
+
+    <string name="txt_select_producer">Select Producer</string>
+    <string name="txt_enter_location">Enter Location</string>
+
+    <string name="txt_select_sale_date_time">Select Sale Date</string>
+
+
+    <string name="txt_select_start_date_time">Select Start Date</string>
+
+    <string name="txt_select_duration_day">Select Duration</string>
+    <string name="txt_ad_duration">Ad Duration (Days)</string>
+
+    <string name="txt_select_animal">Select Animal</string>
+
+    <string name="txt_select_breed">Select Breed</string>
+    <string name="txt_select_animal_type">Select Animal Type</string>
+
+    <string name="txt_select_animal_breed">Select Animal Type</string>
+    <string name="txt_enter_age">Enter Age</string>
+    <string name="txt_enter_quantity">Enter Quantity</string>
+    <string name="txt_select_sex">Select Sex</string>
+
+    <string name="txt_select_pregnancy">Select Pregnancy Status</string>
+    <string name="txt_select_unit">Select Unit</string>
+    <string name="txt_enter_min_weight">Enter Min Weight</string>
+
+
+    <string name="txt_enter_max_weight">Enter Max Weight</string>
+    <string name="txt_enter_average_weight">Enter Average Weight</string>
+    <string name="txt_images">Images</string>
+    <string name="txt_images_video">Images &amp; Videos</string>
+    <string name="txt_preview">Preview</string>
+    <string name="txt_video">Video</string>
+
+
+    <string name="txt_pregnancy_status">Pregnancy Status</string>
+    <string name="txt_min">Min</string>
+
+
+    <string name="txt_max">Max</string>
+    <string name="txt_weight">Weight (kg)</string>
+    <string name="txt_age">age</string>
+    <string name="txt_age_unit">Age Unit</string>
+    <string name="txt_age_years">Age(years)</string>
+
+    <string name="txt_age_c">Age</string>
+    <string name="txt_age_type">Age Type</string>
+
+
+    <string name="txt_offer_accepted_title">Offer Accepted</string>
+
+    <string name="txt_bid_amount">Bit Amount</string>
+    <string name="txt_enter_bid_amount">Enter Bid Amount</string>
+    <string name="txt_accept_offer">Accept Offer</string>
+
+    <string name="txt_accept_offer_des">By submitting this you agree that you are making an agreement based on your chat logs with the buyer.</string>
+    <string name="txt_enter_agreed_sale_price">Enter Agreed Sale Price</string>
+    <string name="txt_delete_report">Delete this market report?</string>
+
+    <string name="txt_new_message">New Message</string>
+
+    <string name="txt_start">Start</string>
+
+
+    <string name="txt_end">End</string>
+    <string name="txt_choose_a_location">Set Search Location</string>
+    <string name="txt_other_information">Other Information</string>
+    <string name="txt_your_last_bid">Your Last Bid: $%s</string>
+    <string name="txt_herd_chat_name">Paddock Sale #%d - %s</string>
+
+    <string name="txt_no">No</string>
+    <string name="txt_yes">Yes</string>
+
+    <string name="txt_today">Today</string>
+
+    <string name="txt_tomorrow">Tomorrow</string>
+    <string name="txt_yesterday">Yesterday</string>
+    <string name="txt_start_later_than_end">Start date cannot be later than end date.</string>
+    <string name="txt_available_later_than_end">Available date cannot be later than end date.</string>
+    <string name="txt_start_before_than_now">Start time cannot be earlier than now</string>
+
+    <string name="txt_available_before_than_now">Available date cannot be earlier than now</string>
+
+    <string name="txt_address_is_required">Address is required</string>
+
+    <string name="txt_producer_is_required">Producer is required.</string>
+
+
+    <string name="txt_make_bid_amount">The reserve is set at $%s</string>
+
+
+    <string name="txt_quantity_number">Quantity: %s</string>
+
+
+    <string name="txt_animal_name">Animal: %s</string>
+    <string name="txt_breed_name">Breed: %s</string>
+    <string name="txt_sex_detail">Sex: %s</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_weight_number">Weight: %s</string>
+
+
+    <string name="txt_agent_name">Agent Name: %s</string>
+    <string name="txt_agent_company">Agent Company: %s</string>
+    <string name="txt_follower">Follow</string>
+
+    <string name="txt_logout">Logout</string>
+    <string name="txt_confirm_logout">Are you sure you want to logout?</string>
+
+    <string name="txt_lmk">LMK</string>
+
+
+    <string name="txt_agents">Agents</string>
+    <string name="txt_agent">Agent</string>
+
+
+    <string name="txt_selling_agent">selling agents</string>
+    <string name="txt_location_map">location map</string>
+
+    <string name="txt_location_not_available">Location not available</string>
+    <string name="txt_no_messages">No Messages</string>
+
+    <string name="txt_none">None</string>
+
+
+    <string name="txt_this_link_is_invalide">This link is invalid.</string>
+
+    <string name="txt_name">Name</string>
+
+
+    <string name="txt_firstname">First Name</string>
+    <string name="txt_lastname">Last Name</string>
+    <string name="txt_email_address">Email Address</string>
+
+    <string name="txt_email">Email</string>
+
+    <string name="txt_enter_your_email_address">Enter your email address</string>
+    <string name="txt_enter_your_password">Enter your password</string>
+    <string name="txt_dont_have_an_account">Don\'t have an account?</string>
+
+    <string name="txt_already_have_an_account">Already have an account?</string>
+    <string name="txt_password">Password</string>
+
+
+    <string name="txt_password_confirm">Confirm Password</string>
+    <string name="txt_enter_your_phone_number">Enter your phone number</string>
+    <string name="txt_phone">Phone</string>
+    <string name="txt_login">Login</string>
+
+
+    <string name="txt_enter_first_name">Enter your first name</string>
+
+
+    <string name="txt_enter_last_name">Enter your last name</string>
+    <string name="txt_enter_password">Enter your password</string>
+    <string name="txt_retry">Retry</string>
+
+
+    <string name="txt_card_ending_in_number">Card ending in %s</string>
+    <string name="txt_expires_month_year">Expires: %02d/%04d</string>
+    <string name="txt_or">OR</string>
+
+
+    <string name="txt_login_facebook">Continue with Facebook</string>
+    <string name="txt_register">Register</string>
+    <string name="txt_forgot_password">Forgot Password?</string>
+    <string name="txt_forgot_your_password">Forgot your password?</string>
+    <string name="txt_open_web_password">Open web page to reset password?</string>
+    <string name="txt_address">Address</string>
+
+    <string name="txt_more_digital">%d more ...</string>
+    <string name="txt_no_available_picture">No available picture</string>
+    <string name="txt_registration_step2">Registration Step2</string>
+
+
+    <string name="txt_registration_step3">Registration Step2</string>
+    <string name="txt_select_a_agent">Select a livestock agent to submit and publish livestock ads.</string>
+    <string name="txt_continue_without_agent">Continue Without Agent</string>
+    <string name="txt_confirm">Confirm</string>
+
+    <string name="txt_start_time_is_required">Start time is required.</string>
+
+    <string name="txt_available_time_is_required">Available time is required.</string>
+    <string name="txt_end_time_is_required">End time is required.</string>
+
+    <string name="txt_quantity_is_required">Quantity is required.</string>
+    <string name="txt_start_later_end">Start time cannot be later than end time.</string>
+
+
+    <string name="txt_add_payment_successfully">A new credit card is added into your account.</string>
+
+
+    <string name="txt_add_payment">Add Payment Details</string>
+    <string name="txt_to_publish">To publish ads a payment method is required.</string>
+    <string name="txt_name_on_card">Name on card</string>
+    <string name="txt_card_number">Card Number</string>
+    <string name="txt_enter_card_name">Enter Card Name</string>
+    <string name="txt_hint_card_number">XXXX XXXX XXXX XXXX</string>
+    <string name="txt_have_a_question">Ask a question &amp; Make an offer</string>
+
+    <string name="txt_chat_with_agent">Contact Agent</string>
+    <string name="txt_view_on_auctions_plus">View on AuctionsPlus</string>
+    <string name="txt_remember_me">Remember me</string>
+
+    <string name="txt_call_agent">Call Agent</string>
+    <string name="txt_sms_agent">SMS Agent</string>
+    <string name="txt_card_exp">Exp MM YYYY</string>
+
+
+    <string name="txt_card_exp_month">Expiry Month</string>
+    <string name="txt_card_exp_year">Expiry Year</string>
+    <string name="txt_call">&#x20;&#x20;Call&#x20;&#x20;</string>
+
+    <string name="txt_message">Message</string>
+    <string name="txt_messages">Messages</string>
+    <string name="txt_set_primary_image">Set Primary Image</string>
+
+    <string name="txt_set_delete_image">Delete Image</string>
+    <string name="txt_set_delete_video">Delete Video</string>
+    <string name="txt_follow">Follow</string>
+
+
+    <string name="txt_request_saleyard">Request Saleyard Advertising?</string>
+
+    <string name="txt_request_saleyard_msg">Would you like to request Store or Feature saleyard advertising? Hit \'Yes\' below and we will contact you.</string>
+    <string name="txt_comming_soon">Comming Soon!</string>
+
+    <string name="txt_prime_saleyard">Our buyers will soon be able to access weekly Sheep and Cattle market numbers, view sale details and access attached draws if available.</string>
+    <string name="txt_my_bids">My Bids</string>
+
+
+    <string name="txt_my_posts">My Posts</string>
+    <string name="txt_saved_ads">Saved Ads</string>
+    <string name="txt_saved_paddock_sales">Saved Paddock Sales</string>
+    <string name="txt_saved_saleyard_auctions">Saved Saleyard Auctions</string>
+    <string name="txt_saved_prime_auctions">Saved Prime Saleyards</string>
+
+
+    <string name="txt_no_available_data">No Results</string>
+
+
+    <string name="txt_search_result">Search Result</string>
+
+    <string name="txt_str_is_invalid">%s is invalid.</string>
+
+
+    <string name="txt_attach_image">Attach Image</string>
+
+    <string name="txt_card_cvv">CVV</string>
+
+
+    <string name="txt_no_address">No Address Somewhere</string>
+    <string name="txt_completed">Completed</string>
+
+    <string name="txt_sold">sold</string>
+    <string name="txt_request">Requests</string>
+    <string name="txt_under_offer">under offer</string>
+
+
+    <string name="txt_current">Current</string>
+    <string name="txt_past">Past</string>
+    <string name="txt_producer_not_available">Sorry, you don\'t have any available producer.</string>
+
+    <string name="txt_post_te">Post</string>
+
+
+    <string name="txt_bid">Bid</string>
+    <string name="txt_photo_view">Photo View</string>
+    <string name="txt_gender">Gender</string>
+    <string name="txt_select_gender">Select gender</string>
+    <string name="txt_select_pregnancy_status">Select a pregnancy status</string>
+    <string name="txt_not_found_livestock">Sorry, no matched advertisements are found. Change the search filter and try again.</string>
+
+
+    <string name="location_disable">Location is disabled, try to turn on it in your device or skip this step.</string>
+    <string name="warning">Warning</string>
+    <string name="obtaining_location">Obtaining location...</string>
+    <string name="txt_logging">Logging...</string>
+
+    <string name="txt_my_ads">My Ads</string>
+
+
+    <string name="txt_login_in_to">Login to access this feature</string>
+
+
+    <string name="txt_username_invalid">Please input your username.</string>
+
+
+    <string name="txt_password_invalid">Please input your password.</string>
+    <string name="txt_password_invalid_same">Two input passwords are not same each other.</string>
+    <string name="txt_password_invalid_length">Your password cannot be less than %d characters.</string>
+    <string name="txt_invalid_input">%s is missing. Please input %s.</string>
+
+
+    <string name="txt_amount">Amount</string>
+    <string name="share_title">Share with</string>
+
+    <string name="txt_num_years_old">%d</string>
+
+    <string name="txt_str_years_old">%s</string>
+    <string name="txt_num_kg">%d kg</string>
+
+    <string name="txt_str_kg">%s kg</string>
+    <string name="txt_num_bid">%d bids</string>
+
+    <string name="login_in_info">Login in to access all the features of Australia\'s best online marketplace for livestock.</string>
+
+
+    <string name="txt_make_a_successful_bid">Submit a successful bit.</string>
+
+
+    <string name="txt_audio_is_required">Audio is required.</string>
+    <string name="txt_recording_or_video_missing">Recording or Video Missing</string>
+    <string name="txt_recording_or_video_missing_info">Please upload at least a recording or video.</string>
+
+
+    <string name="txt_request_livestock_ad">Request Livestock Ad</string>
+
+    <string name="txt_title">Title</string>
+    <string name="txt_description">Description</string>
+    <string name="txt_add_photo">Add Photo</string>
+    <string name="txt_next">Next</string>
+    <string name="txt_create">Create</string>
+    <string name="txt_save">Save</string>
+    <string name="txt_update_details">Update Details</string>
+    <string name="txt_schedule">Schedule</string>
+
+
+    <string name="txt_start_recording">Start recording</string>
+
+    <string name="txt_reject">Reject</string>
+    <string name="txt_create_ad">Create Ad</string>
+    <string name="txt_create_report">Create Report</string>
+
+    <string name="txt_report">Report</string>
+    <string name="txt_null"></string>
+    <string name="txt_loading_audio">Loading audio</string>
+
+    <string name="txt_play_recording">Play Recording</string>
+    <string name="txt_stop_playback">Stop Playback</string>
+    <string name="txt_audio_is_not_available">Audio is not available.</string>
+
+
+    <string name="txt_delete_audio_before_record">Please delete the old audio before recording a new one.</string>
+
+    <string name="txt_price_is_required">Price is required.</string>
+    <string name="txt_number_second">%ds</string>
+
+
+    <string name="txt_delete">Delete</string>
+
+    <string name="txt_submit">Submit</string>
+
+
+    <string name="txt_photo">Photos</string>
+    <string name="txt_quantity">Quantity</string>
+    <string name="txt_weight_min_kg">Min Weight(kg)</string>
+    <string name="txt_weight_max_kg">Max Weight(kg)</string>
+    <string name="txt_weight_average_kg">Average Weight (kg)</string>
+    <string name="txt_weight_average">Average Weight</string>
+
+
+    <string name="txt_weight_min">Min Weight</string>
+    <string name="txt_weight_max">Max Weight</string>
+    <string name="txt_add_card">Add Card</string>
+
+
+    <string name="txt_min_age">Min Age</string>
+
+    <string name="txt_max_age">Max Age</string>
+    <string name="txt_average_age">Average Age</string>
+    <string name="txt_animal">Animal</string>
+
+    <string name="txt_saleyard_category">Saleyard Category</string>
+
+
+    <string name="txt_type">Type</string>
+    <string name="txt_pickup_time_date">Set Date and Time</string>
+    <string name="txt_account_required">Account Required.Please login or register a new account, then try again.</string>
+
+    <string name="txt_sex">Sex</string>
+
+
+    <string name="txt_breed">Breed</string>
+    <string name="txt_offer_type">Offer Type</string>
+
+    <string name="txt_price_type">Price Type</string>
+    <string name="txt_select_price_type">Select Price Type</string>
+    <string name="txt_select_offer_type">Select Offer Type</string>
+
+    <string name="txt_something">Something</string>
+
+
+    <string name="txt_select_location">Select Location</string>
+    <string name="txt_publish">Publish</string>
+    <string name="txt_goLive">Go Live</string>
+    <string name="txt_post">Post</string>
+    <string name="txt_cancel_request">Cancel Request</string>
+
+    <string name="txt_add_a_photo">Add a photo</string>
+    <string name="txt_change_avatar">Change your avatar</string>
+    <string name="txt_change_a_photo">Change a Photo</string>
+    <string name="txt_start_time">Start Date</string>
+
+
+    <string name="txt_end_time">End Date</string>
+    <string name="txt_available_time">Available Time</string>
+    <string name="txt_available_date">Available Date</string>
+    <string name="txt_select_available_date">Select Available Date</string>
+    <string name="txt_sale_yard_auctions">Saleyard Auctions</string>
+
+    <string name="txt_total_head">Total Head</string>
+    <string name="txt_enter_total_head">enter Total Head</string>
+
+    <string name="txt_category">Select Category</string>
+
+    <string name="txt_sale_numbers">Sale Numbers</string>
+    <string name="txt_type_sale_numbers">Type your number break down here</string>
+
+    <string name="txt_attach_draw">Attach Draw</string>
+    <string name="txt_notes">Notes</string>
+    <string name="txt_notes_hints">You can include feature or late entries here</string>
+
+    <string name="txt_select_category">Select Category</string>
+
+
+    <string name="txt_paddock_sales">Paddock Sales</string>
+    <string name="txt_paddock_sale">Paddock Sale</string>
+    <string name="txt_auctions_plus">AuctionsPlus</string>
+    <string name="txt_market_reports">Market Reports</string>
+
+
+    <string name="txt_use_current_location">Use current location</string>
+
+    <string name="txt_current_location">Current location</string>
+    <string name="txt_paddock_details">Paddock Details</string>
+
+
+    <string name="txt_confirm_ad">Confirm Ad</string>
+    <string name="txt_stream">Stream</string>
+    <string name="txt_notifications">Notifications</string>
+
+
+    <string name="txt_expires_on">Expires on: %s</string>
+
+    <string name="txt_str_sale">%s Sale</string>
+
+
+    <string name="txt_set">Set</string>
+
+
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_ok">Ok</string>
+    <string name="txt_chat">Chat</string>
+
+
+    <string name="txt_forced_update_title">New Version Available</string>
+
+    <string name="txt_forced_update_text">A new version of the app is available. Please update the app to continue.</string>
+    <string name="txt_forced_update_button">Go to Play Store</string>
+
+
+    <string name="txt_dollar_price">$ %s</string>
+    <string name="txt_offer_accepted">The offer of $%.02f by %s has been accepted.</string>
+
+    <string name="format_mark_as_sold">The Livestock has been marked as sold at $%.02f.</string>
+
+    <string name="txt_create_a_new_market_report">A new market report is uploaded.</string>
+
+
+    <string name="txt_number_listings_in_this_area">%d listings in this area</string>
+    <string name="txt_number_paddock_in_this_area">%d paddock sales in this area</string>
+
+    <string name="txt_number_saleyard_in_this_area">%d entitySaleyard auctions sales in this area</string>
+
+    <string name="txt_number_day">%d Day</string>
+
+
+    <string name="txt_number_days">%d Days</string>
+    <string name="txt_filters_applied">Filters Applied</string>
+
+    <string name="txt_distance">Distance</string>
+
+
+    <string name="txt_distance_km_km">Distance(km)</string>
+    <string name="txt_search_radius">Search Radius(Km)</string>
+    <string name="txt_distance_km">%dkm</string>
+
+
+    <string name="txt_positive_distance_km">+%dkm</string>
+    <string name="txt_feature_under_development">This Feature is still under development.</string>
+
+    <string name="txt_location">Location</string>
+
+    <string name="txt_filter">Filter</string>
+    <string name="txt_filter_result">Filter Results</string>
+    <string name="txt_filter_saleyard_auctions">Filter Saleyard Auctions</string>
+    <string name="txt_filter_paddock_sales">Filter Paddock Sales</string>
+
+    <string name="txt_feature_sale">Feature Sale</string>
+
+    <string name="txt_saleyard">Saleyard</string>
+
+
+    <string name="txt_saleyard_auctions">Saleyard Auctions</string>
+    <string name="txt_prime_saleyards">Prime Saleyards</string>
+
+
+    <string name="txt_saleyard_auction">Saleyard Auction</string>
+    <string name="txt_saleyard_plus">AuctionsPlus</string>
+    <string name="txt_unlink">Unlink</string>
+
+    <string name="txt_link_saleyard_auction">Link Saleyard Auction</string>
+
+    <string name="txt_stock">Stock</string>
+    <string name="txt_have_your_herd">Have You Herd</string>
+
+
+    <string name="txt_submit_done">Submit successfully.</string>
+
+    <string name="txt_saleyard_update_done">Saleyard is updated successfully.</string>
+
+
+    <string name="txt_weighed">weighed</string>
+
+
+    <string name="txt_dentition">dentition</string>
+    <string name="txt_mouthed">mouthed</string>
+    <string name="txt_eu">eu</string>
+    <string name="txt_msa">msa</string>
+    <string name="txt_lpa">lpa</string>
+    <string name="txt_organic">organic</string>
+    <string name="txt_pcas">pcas</string>
+    <string name="txt_weighed_c">Weighed</string>
+
+
+    <string name="txt_dentition_c">Dentition</string>
+    <string name="txt_mouthed_c">Mouthed</string>
+    <string name="txt_eu_c">Eu</string>
+    <string name="txt_msa_c">Msa</string>
+    <string name="txt_lpa_c">Lpa</string>
+    <string name="txt_organic_c">Organic</string>
+    <string name="txt_pcas_c">Pcas</string>
+    <string name="title_activity_gallery_main">GalleryMainActivity</string>
+
+
+    <string name="title_activity_profile">ProfileActivity</string>
+
+    <string name="txt_posts">Posts</string>
+
+    <string name="txt_ads">Ads</string>
+
+
+    <string name="tab_text_3">Tab 3</string>
+
+
+    <string name="tab_text_1">Tab 3</string>
+    <string name="tab_text_2">Tab 3</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="txt_all">All</string>
+    <string name="txt_following">Following</string>
+    <string name="txt_profile">Profile</string>
+    <string name="txt_edit_account_details">Edit Account Details</string>
+    <string name="txt_num_followers">%d Followers</string>
+
+    <string name="txt_all_reports">All Reports</string>
+    <string name="txt_my_reports">My Reports</string>
+    <string name="txt_select_saleyard">Select a Saleyard</string>
+
+
+    <string name="txt_select_saleyard_auction">Select Saleyard Auction</string>
+
+    <string name="txt_stop_recording_then_try_again">Please stop recording then try again.</string>
+
+    <string name="txt_what_would_you_like_to_post">What would you like to post?</string>
+    <string name="txt_no_more_data"></string>
+    <string name="txt_select_a_saleyard">Select a Saleyard</string>
+    <string name="txt_select">Select</string>
+    <string name="txt_number_head">%d Head</string>
+
+    <string name="txt_number_bid">%d bids</string>
+
+
+    <string name="txt_listen">Listen</string>
+    <string name="txt_upload_video">Upload Video</string>
+
+
+    <string name="txt_update">Update</string>
+
+
+    <string name="txt_record">Record</string>
+    <string name="txt_recording">Recording</string>
+
+    <string name="txt_stop_recording_text">Stop Recording</string>
+    <string name="txt_pause">Pause</string>
+
+
+    <string name="txt_loading">Loading</string>
+    <string name="txt_locating">Locating...</string>
+    <string name="txt_playing">Playing</string>
+    <string name="txt_delete_recording">Delete Recording</string>
+    <string name="txt_delete_video">Delete Video</string>
+    <string name="txt_delete_attachment">Delete Attachment</string>
+
+    <string name="txt_delete_video_info">Delete current video and start a new one?</string>
+    <string name="txt_delete_attachment_info">Delete current attachment and start a new one?</string>
+
+    <string name="txt_delete_recording_info">Delete current recording and start a new one?</string>
+    <string name="txt_cannot_more_than">%s cannot be more than %s.</string>
+    <string name="txt_unfollowing">Unfollow</string>
+
+    <string name="txt_female">Female</string>
+    <string name="txt_attention">Attention Livestock Agents</string>
+    <string name="txt_do_not_register">Do not register here if you want full access to load livestock, market reports and all of our  agent capabilities. We need to register your office via The Herd website. Agents can create a profile for their office and then invite staff to the profile.\n\nAlternatively call Sam at The Herd and we will help activate your account.</string>
+
+
+    <string name="txt_go_to_website">Go to Website</string>
+
+
+    <string name="txt_remember_to_register">Remember to Register or Log In to receive Paddock Sale notifications</string>
+    <string name="txt_agents_register">Agents register your office on the website if you want full load capabilities. You can then log in on the App</string>
+    <string name="txt_dont_show_me">Don\'t show me this again</string>
+
+
+    <string name="txt_contact_sam">Contact Sam</string>
+    <string name="sample_title">ChatKit for Android</string>
+    <string name="txt_livestock_agent_registration">Livestock Agent Registration</string>
+
+    <string name="view">View</string>
+    <string name="sample_title_default">Default view</string>
+    <string name="sample_subtitle_default">Dialogs and messages with default style</string>
+    <string name="sample_title_attrs">Styled view</string>
+
+    <string name="txt_sam_number">0402629747</string>
+    <string name="txt_please_stop_audio_playing">Audio is playing.</string>
+
+
+    <string name="sample_subtitle_attrs">Styled components using embedded attributes</string>
+
+    <string name="sample_title_layout">Custom layout</string>
+
+    <string name="sample_subtitle_layout">Custom layouts to change default views position</string>
+
+
+    <string name="sample_title_holder">Custom view holder</string>
+
+    <string name="sample_subtitle_holder">Custom view holder to extend default behaviour for a new features</string>
+
+
+    <string name="sample_title_custom_content">Custom content type</string>
+
+
+    <string name="sample_subtitle_custom_content">Custom message content on the example of voice message</string>
+
+
+    <string name="hint_enter_a_message">Type a message…</string>
+
+    <string name="on_log_click_message">Your custom long click handler</string>
+
+    <string name="action_delete">Delete</string>
+    <string name="action_copy">Copy</string>
+    <string name="copied_message">Message copied!</string>
+    <string name="date_header_today">Today</string>
+    <string name="date_header_yesterday">Yesterday</string>
+    <string name="txt_view_saleyard">View Saleyard</string>
+    <string name="start_typing_status">Start typing</string>
+    <string name="t_no_any_notify">No any notifications</string>
+    <string name="stop_typing_status">Stop typing</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">News</string>
+
+    <string-array name="share_disc_options">
+        <item>Share Your Disc</item>
+        <item>Save Your Disc</item>
+    </string-array>
+    <string-array name="sex_option_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="pickup_photo_options">
+        <item>Take Photo</item>
+        <item>Select From Library</item>
+    </string-array>
+    <string-array name="pickup_photo_options_with_delete_option">
+        <item>Take Photo</item>
+        <item>Select From Library</item>
+        <item>Remove Image</item>
+
+    </string-array>
+
+    <string name="option_take_photo">Take Photo</string>
+    <string name="option_take_video">Take Video</string>
+    <string name="option_file_action">File Action</string>
+    <string name="option_select_from_library">Select From Library</string>
+    <string name="option_select_Image_from_library">Select Image From Library</string>
+
+    <string-array name="pickup_media_options">
+        <item>@string/option_take_photo</item>
+        <item>@string/option_take_video</item>
+        <item>@string/option_select_from_library</item>
+    </string-array>
+    <string-array name="pickup_mediaAttachment_options">
+        <item>@string/option_file_action</item>
+        <item>@string/option_take_photo</item>
+        <item>@string/option_select_Image_from_library</item>
+    </string-array>
+
+    <string-array name="pickup_video_report_options">
+        <item>@string/option_take_video</item>
+        <item>@string/option_select_from_library</item>
+    </string-array>
+
+    <string-array name="saleyard_type">
+        <item>All</item>
+        <item>Store Sale</item>
+        <item>Weaner Sale</item>
+        <item>Feature Sale</item>
+    </string-array>
+    <string-array name="sex_array">
+        <item>All</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="sex_array_without_all">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="array_age_unit">
+        <item>years</item>
+        <item>months</item>
+    </string-array>
+
+    <string-array name="pregnancy_array">
+        <item>Not Pregnant</item>
+        <item>Pregnant</item>
+    </string-array>
+    <string-array name="pregnancy_array_extend">
+        <item>All</item>
+        <item>Not Pregnant</item>
+        <item>Pregnant</item>
+    </string-array>
+
+    <string-array name="array_price_type">
+        <item>Per Head</item>
+        <item>Per Kilo</item>
+    </string-array>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string-array name="view_types_dialog">
+        <item name="image">Image (default)</item>
+        <item name="voice">Voice message (custom)</item>
+    </string-array>
+
+    <string name="txt_ono">ONO</string>
+    <string name="txt_edit">Edit</string>
+    <string name="txt_are_you_sure_delete_paddock_sale">Are you sure to delete this paddock sale?</string>
+    <string name="txt_are_you_sure_delete_prime_saleyard">Are you sure to delete this prime saleyards?</string>
+    <string name="t_stock_available_from">Stock Available From</string>
+    <string name="t_when_can_the_stock_be_picked_up">When can the stock be picked up?</string>
+    <string name="t_earliest_date">Earliest Date</string>
+    <string name="select_earliest_date">Select Earliest Date</string>
+    <string name="t_latest_date">Latest Date</string>
+    <string name="select_latest_date">Select Latest Date</string>
+    <string name="txt_vendorbred_c">Vendor Bred</string>
+    <string name="txt_grass_fed_c">Grass Fed</string>
+    <string name="txt_antibiotic_free_c">Antibiotic Free</string>
+    <string name="txt_life_time_traceable_c">Life Time Traceable</string>
+    <string name="txt_one_mark_c">One Mark</string>
+    <string name="txt_hgp_free_c">HGP Free</string>
+    <string name="txt_asap_c">ASAP</string>
+    <string name="t_enter_assessor">Enter Assessor</string>
+    <string name="accessed_by">Accessed By</string>
+    <string name="t_under_offer">Under Offer</string>
+    <string name="txt_enter_notes">Enter Notes</string>
+    <string name="txt_wanted_livestock">Wanted Livestock</string>
+    <string name="txt_herd_live">Herd Live</string>
+    <string name="txt_create_saleyard_stream">Create Saleyard Stream</string>
+    <string name="txt_saleyard_stream_created">Saleyard Stream Created</string>
+    <string name="txt_saleyard_stream_created_msg">Your saleyard stream has been created.</string>
+    <string name="txt_live_now">LIVE NOW</string>
+    <string-array name="array_offer_type">
+        <item>Fixed Price</item>
+        <item>Offers Between</item>
+    </string-array>
+
+
+    <string-array name="array_offer_type_sever_side">
+        <item>fixed</item>
+        <item>offers</item>
+    </string-array>
+
+
+    <string name="start_publishing">Start Publishing</string>
+    <string name="stop_publishing">Stop Publishing</string>
+    <string name="started_publishing">Publishing Started</string>
+    <string name="stopped_publishing">Publishing Stopped</string>
+    <string name="disconnected_publishing">Publishing Disconnected</string>
+    <string name="failed_publishing">Failed To Connect</string>
+
+    <string name="error_empty_url">url is empty</string>
+
+    <string name="publishing_label">LIVE  %1$s:%2$s</string>
+    <string name="permission_msg">To access this feature please allow all permission as you denied permanently.\n To enable permission go to app info and allow permission manual.</string>
+</resources>

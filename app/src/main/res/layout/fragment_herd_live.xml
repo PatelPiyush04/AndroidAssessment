@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/main_collapsingTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/radio_bar_margin"
+                android:layout_marginTop="@dimen/radio_bar_top_bottom"
+                android:layout_marginRight="@dimen/radio_bar_margin"
+                android:layout_marginBottom="@dimen/radio_bar_top_bottom"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation">
+
+                <RadioGroup
+                    android:id="@+id/linear_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_option_1"
+                        style="@style/AppTheme.RadioText"
+                        android:background="@drawable/radio_background_left"
+                        android:checked="true"
+                        android:text="Upcoming" />
+
+                    <View
+                        android:id="@+id/divide_1"
+                        style="@style/AppTheme.VerticalLine" />
+
+                    <RadioButton
+                        android:id="@+id/radio_option_2"
+                        style="@style/AppTheme.RadioText"
+                        android:background="@drawable/radio_background"
+                        android:text="Past" />
+
+                    <View
+                        android:id="@+id/divide_2"
+                        style="@style/AppTheme.VerticalLine" />
+
+                    <RadioButton
+                        android:id="@+id/radio_option_3"
+                        style="@style/AppTheme.RadioText"
+                        android:background="@drawable/radio_background_right"
+                        android:text="My" />
+
+                </RadioGroup>
+            </androidx.cardview.widget.CardView>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_HerdLive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/tv_noRecordFound"
+            style="@style/AppTheme.ItemContentText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Herd Live Upcoming"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</layout>

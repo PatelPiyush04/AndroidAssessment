@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/page_margin_left"
+        android:paddingRight="@dimen/page_margin_right"
+        android:background="@color/colorCardbackground"
+        android:layout_marginBottom="0.5dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/cardImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:src="@drawable/icon_creditcard_master"/>
+    <LinearLayout
+        android:id="@+id/linearLayout_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="left|center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_margin_horizontal"
+            android:layout_marginRight="@dimen/page_margin_horizontal"
+            android:text="daskfljasdf"
+            android:textColor="@color/colorDarkBlue"
+            android:textStyle="bold"
+            android:id="@+id/tv_title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_margin_horizontal"
+            android:layout_marginRight="@dimen/page_margin_horizontal"
+            android:text="154dsafdfs"
+            android:id="@+id/tv_detail"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</layout>

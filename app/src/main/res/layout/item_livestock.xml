@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:addStatesFromChildren="true"
+            android:background="@color/colorCardbackground"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:id="@+id/frameLayout_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/list_image"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@color/colorMainbackground"
+                        app:layout_constraintDimensionRatio="1:0.5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></androidx.viewpager.widget.ViewPager>
+
+                    <ImageView
+                        android:id="@+id/image_no_available_picture"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="false"
+                        android:background="@color/colorCardbackground"
+                        android:cropToPadding="false"
+                        android:padding="40dp"
+                        android:scaleType="fitCenter"
+                        android:tint="@android:color/darker_gray"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="@+id/list_image"
+                        app:layout_constraintDimensionRatio=""
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/logo_theherd_white" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/tv_type_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/background_sold_label"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Request"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/AppTheme.ItemTitleText"
+                android:maxLines="4"
+                android:minLines="1"
+                android:nestedScrollingEnabled="true"
+                android:text="Listing Title Here - Pricerange" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/list_divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_poddock_sale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_item_padding"
+                    android:layout_marginRight="@dimen/vertical_item_padding">
+
+                    <TextView
+                        android:id="@+id/tv_sale_type"
+                        style="@style/AppTheme.SaleyardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_label"
+                        android:includeFontPadding="false"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/txt_paddock_sale"
+                        android:textSize="14dp" />
+
+
+                    <ImageView
+                        android:id="@+id/image_saved"
+                        style="@style/AppTheme.Icon.saved"
+                        android:layout_gravity="center_vertical|right" />
+
+
+                    <TextView
+                        android:id="@+id/tv_bid_number"
+                        style="@style/AppTheme.ItemContentSubText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/txt_paddock_sales"
+                        android:textColor="@color/colorIconBlue"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/vertical_item_padding"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <ImageView
+                        android:id="@+id/imageView_quantity"
+                        style="@style/AppTheme.Icon"
+                        app:srcCompat="@drawable/ic_quantity" />
+
+                    <TextView
+                        android:id="@+id/tv_quantity"
+                        style="@style/AppTheme.ItemContentText"
+                        android:text="125" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_breed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="@dimen/vertical_item_padding"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <ImageView
+                        android:id="@+id/imageView_animal"
+                        style="@style/AppTheme.Icon"
+                        app:srcCompat="@drawable/ic_default_animal_symbol" />
+
+                    <TextView
+                        android:id="@+id/tv_breed"
+                        style="@style/AppTheme.ItemContentText"
+                        android:text="Sheep" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/vertical_item_padding"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <ImageView
+                        android:id="@+id/imageView_location"
+                        style="@style/AppTheme.Icon"
+                        app:srcCompat="@drawable/ic_address" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_location"
+                        style="@style/AppTheme.ItemContentText"
+                        android:text="Mendooran" />
+
+                        <TextView
+                            android:id="@+id/tv_distance"
+                            style="@style/AppTheme.ItemContentText"
+                            android:paddingTop="-5dp"
+                            android:text="Mendooran"
+                            android:textColor="@android:color/darker_gray"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_expires"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/vertical_item_padding"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <ImageView
+                        android:id="@+id/imageView_expires"
+                        style="@style/AppTheme.Icon"
+                        app:srcCompat="@drawable/ic_icon_expiry" />
+
+                    <TextView
+                        android:id="@+id/tv_expires"
+                        style="@style/AppTheme.ItemContentText"
+                        android:text="Mendooran" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

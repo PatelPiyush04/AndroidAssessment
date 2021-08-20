@@ -1,0 +1,157 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/item_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/vertical_item_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/colorCardbackground"
+                        android:paddingLeft="@dimen/page_margin_left"
+                        android:paddingRight="@dimen/page_margin_right"
+                        android:paddingBottom="20dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/layout_avatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp">
+
+                            <androidx.constraintlayout.widget.Guideline
+                                android:id="@+id/guideline_left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintGuide_percent="0.3" />
+
+                            <androidx.constraintlayout.widget.Guideline
+                                android:id="@+id/guideline_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintGuide_percent="0.7" />
+
+                            <ImageView
+                                android:id="@+id/image_avatar"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:adjustViewBounds="false"
+                                android:scaleType="centerCrop"
+                                app:layout_constraintDimensionRatio="w,1:1"
+                                app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+                                app:layout_constraintStart_toStartOf="@+id/guideline_left"
+                                android:contentDescription="TODO" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_firstname" />
+
+                        <EditText
+                            android:id="@+id/edit_first_name"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_first_name"
+                            android:inputType="text" />
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_lastname" />
+
+                        <EditText
+                            android:id="@+id/edit_last_name"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_last_name"
+                            android:inputType="text" />
+
+
+
+                        <TextView
+                            android:id="@+id/tv_phone_number"
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_phone" />
+
+                        <EditText
+                            android:id="@+id/edit_phone_number"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_your_phone_number"
+                            android:inputType="text|number" />
+
+                    </LinearLayout>
+
+
+                    <com.theherdonline.ui.general.HerdButton
+                        android:id="@+id/button_action"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/page_margin_button"
+                        android:layout_marginRight="@dimen/page_margin_button"
+                        android:layout_marginTop="15dp"
+                        app:HerdButton_icon="@drawable/ic_button_inline_confirm"
+                        app:HerdButton_text="@string/txt_update_details" />
+
+
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+        </FrameLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/AppTheme.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

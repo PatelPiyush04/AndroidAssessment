@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/main_collapsingTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/radio_bar_top_bottom"
+                android:layout_marginBottom="@dimen/radio_bar_top_bottom"
+                android:layout_marginRight="@dimen/radio_bar_margin"
+                android:layout_marginLeft="@dimen/radio_bar_margin"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation">
+
+                <RadioGroup
+                    android:id="@+id/linear_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_option_1"
+                        style="@style/AppTheme.RadioText"
+                        android:background="@drawable/radio_background_left"
+                        android:checked="true"
+                        android:text="All" />
+                    <View
+                        android:id="@+id/divide_1"
+                        style="@style/AppTheme.VerticalLine"/>
+                    <RadioButton
+                        android:id="@+id/radio_option_2"
+                        style="@style/AppTheme.RadioText"
+                        android:background="@drawable/radio_background"
+                        android:text="Cattle" />
+                    <View
+                        android:id="@+id/divide_2"
+                        style="@style/AppTheme.VerticalLine"/>
+                    <RadioButton
+                        android:id="@+id/radio_option_3"
+                        style="@style/AppTheme.RadioText"
+                        android:background="@drawable/radio_background_right"
+                        android:text="Sheep" />
+
+                </RadioGroup>
+            </androidx.cardview.widget.CardView>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <!-- TODO: Update blank fragment layout -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/main_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMainbackground">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/main_collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_filter"
+                    style="@style/AppTheme.CardView.SearchIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:id="@+id/liner_filter_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@drawable/list_divider_vertical"
+                        android:dividerPadding="0dp"
+                        android:orientation="horizontal"
+                        android:showDividers="middle"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image_animal"
+                                style="@style/AppTheme.Icon"
+                                app:srcCompat="@drawable/ic_filter" />
+
+                            <TextView
+                                android:id="@+id/tv_animal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|left"
+                                android:lines="1"
+                                android:text="Sheep"
+                                android:textAlignment="gravity"
+                                android:textColor="@color/colorTextDark" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="10"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                style="@style/AppTheme.Icon"
+                                app:srcCompat="@drawable/ic_address" />
+
+                            <TextView
+                                android:id="@+id/tv_address"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|left"
+                                android:lines="1"
+                                android:text="Snowy Mountains NSW"
+                                android:textColor="@color/colorTextDark" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_distance"
+                            style="@style/AppTheme.Icon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:text="+55kms"
+                            android:textColor="@color/colorTextDark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_filter_applied"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/txt_filters_applied"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorTextDark" />
+
+                </androidx.cardview.widget.CardView>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <FrameLayout
+                android:id="@+id/frameLayout_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></FrameLayout>
+
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+</layout>

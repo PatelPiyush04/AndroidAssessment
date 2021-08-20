@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:HerdButton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+
+
+
+<!--        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:background="@color/colorToolbarBackground">
+
+            <ImageView
+                android:id="@+id/imageView_backbutton"
+                style="@style/AppTheme.TopBarBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_toolbar_title"
+                style="@style/AppTheme.ToolbarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/txt_distance" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imageView_favorite"
+                    style="@style/AppTheme.TopBarRightButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_star_border" />
+
+                <ImageView
+                    android:id="@+id/imageView_sharing"
+                    style="@style/AppTheme.TopBarRightButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_share" />
+            </LinearLayout>
+
+            <View style="@style/AppTheme.HorizontalLine" />
+        </FrameLayout>-->
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:focusableInTouchMode="true"
+                android:divider="@drawable/linear_divider_saleyard_detail"
+                android:showDividers="middle"
+                android:paddingTop="@dimen/vertical_item_margin"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTheme.SaleyardCard"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/AppTheme.LinearDivider"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            style="@style/AppTheme.ItemTitleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_location" />
+
+
+                        <TextView
+                            style="@style/AppTheme.SaleyardTitle"
+                            android:id="@+id/tv_saleyard_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/background_label"
+                            android:includeFontPadding="false"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_marginLeft="@dimen/page_margin_left"
+                            android:text="@string/txt_paddock_sale"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/vertical_item_padding"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <ImageView
+                                style="@style/AppTheme.Icon"
+                                app:srcCompat="@drawable/ic_date" />
+
+                            <TextView
+                                android:id="@+id/tv_time"
+                                style="@style/AppTheme.ItemContentText"
+                                android:text="Listing Title Here - Pricerange" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_quantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/vertical_item_padding"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <ImageView
+                                style="@style/AppTheme.Icon"
+                                app:srcCompat="@drawable/ic_quantity" />
+
+                            <TextView
+                                android:id="@+id/tv_quantity"
+                                style="@style/AppTheme.ItemContentText"
+                                android:text="Animal location address" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/vertical_item_padding"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <ImageView
+                                android:id="@+id/imageView_animal_type"
+                                style="@style/AppTheme.Icon"
+                                app:srcCompat="@drawable/ic_animal_sheep" />
+
+                            <TextView
+                                android:id="@+id/tv_animal_type"
+                                style="@style/AppTheme.ItemContentText"
+                                android:text="Animal location address" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/vertical_item_padding"
+                            android:paddingTop="@dimen/vertical_item_padding"
+                            android:paddingBottom="@dimen/vertical_item_padding">
+
+                            <ImageView
+                                style="@style/AppTheme.Icon"
+                                app:srcCompat="@drawable/ic_address" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/tv_location"
+                                    style="@style/AppTheme.ItemContentText"
+                                    android:text="Mendooran" />
+
+                                <TextView
+                                    android:id="@+id/tv_distance"
+                                    style="@style/AppTheme.ItemContentText"
+                                    android:paddingTop="-5dp"
+                                    android:text="Mendooran"
+                                    android:textColor="@android:color/darker_gray"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_sell_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    style="@style/AppTheme.SaleyardCard">
+                    <TextView
+                        android:id="@+id/tv_sell_number"
+                        android:paddingTop="@dimen/vertical_item_padding_txt"
+                        android:paddingBottom="@dimen/vertical_item_padding_txt"
+                        style="@style/AppTheme.ItemContentText"
+                        android:textSize="16dp"
+                        android:text="@string/txt_animal" />
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_note"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    style="@style/AppTheme.ItemContentSubTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_notes"
+                    android:text="@string/txt_notes"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:includeFontPadding="false"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTheme.SaleyardCard">
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:paddingTop="@dimen/vertical_item_padding_txt"
+                        android:paddingBottom="@dimen/vertical_item_padding_txt"
+                        style="@style/AppTheme.ItemContentText"
+                        android:textSize="16dp"
+                        android:text="@string/txt_animal" />
+                </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_image_pager"
+                    style="@style/AppTheme.SaleyardCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/list_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/colorMainbackground"
+                    app:layout_constraintDimensionRatio="1:0.5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></androidx.viewpager.widget.ViewPager>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_view_sale_draw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+
+
+                        <com.theherdonline.ui.general.HerdButton
+                            android:id="@+id/button_view_sale_draw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/page_margin_button"
+                            android:layout_marginRight="@dimen/page_margin_button"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="15dp"
+
+                            android:visibility="visible"
+                            HerdButton:HerdButton_text="@string/txt_view_sale_draw"></com.theherdonline.ui.general.HerdButton>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    style="@style/AppTheme.ItemContentSubTitleText"
+                    android:id="@+id/tv_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_stock"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:includeFontPadding="false"
+                    />
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list_stock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_stock">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_location_map"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    style="@style/AppTheme.ItemContentSubTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_location_map"
+                    android:text="@string/txt_location_map"
+
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:includeFontPadding="false"
+                    />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_map"
+                    style="@style/AppTheme.SaleyardCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                   >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:addStatesFromChildren="false">
+
+                        <fragment
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="0dp"
+
+                            app:layout_constraintDimensionRatio="w,1:2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_location_not_available"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_location_not_available"
+
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toBottomOf="@id/map"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout_sell_agents"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/AppTheme.ItemContentSubTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_sell_agents"
+                    android:text="@string/txt_selling_agent"
+                    android:textAllCaps="true"
+
+                    android:textSize="18sp" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTheme.SaleyardCard">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list_agent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_contact_card"></androidx.recyclerview.widget.RecyclerView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+</layout>

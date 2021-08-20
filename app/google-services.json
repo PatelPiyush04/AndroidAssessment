@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "302942845707",
+    "firebase_url": "https://the-herd-1558401114583.firebaseio.com",
+    "project_id": "the-herd-1558401114583",
+    "storage_bucket": "the-herd-1558401114583.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302942845707:android:caa453f3ac7e90db7a000e",
+        "android_client_info": {
+          "package_name": "com.theherdonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302942845707-n538h0ch6f0qk59i5a4v0kgii58i98b7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACW8hs8joCpmHpUhcNZXyiKCa8dlOZlU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302942845707-n538h0ch6f0qk59i5a4v0kgii58i98b7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "302942845707-bb6buccal99krtkekdegqhf55b52fd2p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.saavi.theHerd"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.profile.UserProfileFragment">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frameLayout_container"
+            >
+
+
+            <!-- TODO: Update blank fragment layout -->
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/main_appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMainbackground">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/main_collapsing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@android:color/white"
+                           android:paddingTop="15dp"
+                           android:paddingBottom="15dp"
+
+                           android:orientation="vertical">
+
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal">
+
+                               <View
+                                   android:layout_width="0dp"
+                                   android:layout_height="0dp"
+                                   android:layout_weight="1" />
+
+                               <ImageView
+                                   android:id="@+id/image_avatar"
+                                   android:layout_width="0dp"
+                                   android:layout_height="wrap_content"
+                                   android:layout_weight="2"
+                                   android:scaleType="fitCenter"
+                                    />
+
+                               <View
+                                   android:layout_width="0dp"
+                                   android:layout_height="0dp"
+                                   android:layout_weight="1" />
+
+                           </LinearLayout>
+
+                           <TextView
+                               android:id="@+id/tv_org_name"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:layout_marginTop="10dp"
+                               android:layout_marginBottom="10dp"
+                               android:gravity="center"
+                               android:text=""
+                               android:textAlignment="gravity"
+                               android:textColor="@color/colorText"
+                               android:textSize="16dp"
+                               android:textStyle="bold" />
+
+
+                           <TextView
+                               android:id="@+id/tv_org_bio"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:gravity="center"
+                               android:layout_marginLeft="8dp"
+                               android:layout_marginRight="8dp"
+                               android:text=""
+                               android:textAlignment="gravity"
+                               android:textColor="@color/colorText" />
+
+
+                           <TextView
+                               android:id="@+id/tv_org_address"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:layout_marginTop="10dp"
+                               android:layout_marginBottom="10dp"
+                               android:gravity="center"
+                               android:text=""
+                               android:textAlignment="gravity"
+                               android:textColor="@color/colorText" />
+
+
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal">
+
+                               <View
+                                   android:layout_width="match_parent"
+                                   android:layout_height="0dp"
+                                   android:layout_weight="1" />
+
+                               <LinearLayout
+                                   android:id="@+id/linear_call"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_weight="1"
+                                   android:orientation="vertical">
+
+                                   <ImageView
+                                       android:id="@+id/image_phone_call"
+
+                                       android:layout_width="@dimen/contact_icon_size_small"
+                                       android:layout_height="@dimen/contact_icon_size_small"
+                                       android:layout_gravity="center"
+                                       android:tint="@color/colorIcon"
+                                       app:srcCompat="@drawable/button_call" />
+
+                                   <TextView
+                                       android:id="@+id/tv_call"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_gravity="center"
+                                       android:gravity="center"
+                                       android:text="@string/txt_call"
+                                       android:textAlignment="gravity"
+                                       android:textColor="@color/colorIcon" />
+                               </LinearLayout>
+
+                               <LinearLayout
+                                   android:id="@+id/linear_email"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_weight="1"
+                                   android:orientation="vertical">
+
+                                   <ImageView
+                                       android:id="@+id/image_email"
+                                       android:layout_width="@dimen/contact_icon_size_small"
+                                       android:layout_height="@dimen/contact_icon_size_small"
+                                       android:layout_gravity="center"
+                                       android:tint="@color/colorIcon"
+                                       app:srcCompat="@drawable/button_email" />
+
+                                   <TextView
+                                       android:id="@+id/tv_email"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_gravity="center"
+                                       android:gravity="center"
+                                       android:text="@string/txt_email"
+                                       android:textAlignment="gravity"
+                                       android:textColor="@color/colorIcon" />
+                               </LinearLayout>
+
+
+                               <View
+                                   android:layout_width="match_parent"
+                                   android:layout_height="0dp"
+                                   android:layout_weight="1" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:id="@+id/linear_links"
+                           android:visibility="invisible"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="20dp"
+                           android:background="@android:color/white"
+                           android:orientation="horizontal"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp">
+
+                           <ImageView
+                               android:id="@+id/image_facebook"
+                               android:layout_width="@dimen/contact_icon_size_small"
+                               android:layout_height="@dimen/contact_icon_size_small"
+                               android:layout_gravity="center"
+                               android:layout_weight="1"
+                               android:tint="@color/colorIcon"
+                               app:srcCompat="@drawable/button_fb" />
+
+
+                           <ImageView
+                               android:id="@+id/image_ins"
+                               android:layout_width="@dimen/contact_icon_size_small"
+                               android:layout_height="@dimen/contact_icon_size_small"
+                               android:layout_gravity="center"
+                               android:layout_weight="1"
+                               android:tint="@color/colorIcon"
+                               app:srcCompat="@drawable/button_insta" />
+
+                           <ImageView
+                               android:id="@+id/image_youtube"
+                               android:layout_width="@dimen/contact_icon_size_small"
+                               android:layout_height="@dimen/contact_icon_size_small"
+                               android:layout_gravity="center"
+                               android:layout_weight="1"
+                               android:tint="@color/colorIcon"
+                               app:srcCompat="@drawable/button_yt" />
+
+                           <ImageView
+                               android:id="@+id/image_twitter"
+                               android:layout_width="@dimen/contact_icon_size_small"
+                               android:layout_height="@dimen/contact_icon_size_small"
+                               android:layout_gravity="center"
+                               android:layout_weight="1"
+                               android:tint="@color/colorIcon"
+                               app:srcCompat="@drawable/button_twitter" />
+
+                           <ImageView
+                               android:id="@+id/image_web"
+                               android:layout_width="@dimen/contact_icon_size_small"
+                               android:layout_height="@dimen/contact_icon_size_small"
+                               android:layout_gravity="center"
+                               android:layout_weight="1"
+                               android:tint="@color/colorIcon"
+                               app:srcCompat="@drawable/button_web" />
+
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/radio_bar_margin"
+                    android:layout_marginTop="@dimen/radio_bar_top_bottom"
+                    android:layout_marginRight="@dimen/radio_bar_margin"
+                    android:layout_marginBottom="@dimen/radio_bar_top_bottom"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="@dimen/card_elevation">
+
+                    <RadioGroup
+                        android:id="@+id/linear_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_agents"
+                            style="@style/AppTheme.RadioText"
+                            android:background="@drawable/radio_background_left"
+                            android:checked="true"
+                            android:text="@string/txt_agents" />
+
+                        <RadioButton
+                            android:id="@+id/radio_stream"
+                            style="@style/AppTheme.RadioText"
+                            android:background="@drawable/radio_background_right"
+                            android:text="@string/txt_stream" />
+                    </RadioGroup>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <com.theherdonline.ui.view.LockableViewPager
+                android:id="@+id/stream_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
+</layout>

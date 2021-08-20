@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/frameLayout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                style="@style/AppTheme.LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/linear_show_report"
+                    style="@style/AppTheme.LinearLayout.Section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_item_margin"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_report"
+                        style="@style/AppTheme.CardView">
+
+                        <LinearLayout
+                            android:id="@+id/market_report"
+                            style="@style/LinearLayoutItem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_title_report"
+                                style="@style/AppTheme.ItemTitleText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Albury May Sale" />
+
+                            <LinearLayout
+                                android:id="@+id/linear_description"
+                                style="@style/HorizontalInLineItem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imageView_description"
+                                    style="@style/AppTheme.Icon"
+                                    app:srcCompat="@drawable/ic_date" />
+
+                                <TextView
+                                    android:id="@+id/tv_description"
+                                    style="@style/AppTheme.ItemContentText"
+                                    android:text="125" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_sale_date"
+                                style="@style/HorizontalInLineItem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imageView_sale_date"
+                                    style="@style/AppTheme.Icon"
+                                    app:srcCompat="@drawable/icon_hash" />
+
+                                <TextView
+                                    android:id="@+id/tv_sale_date"
+                                    style="@style/AppTheme.ItemContentText"
+                                    android:text="125" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_sale_address"
+                                style="@style/HorizontalInLineItem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imageView_sale_address"
+                                    style="@style/AppTheme.Icon"
+                                    app:srcCompat="@drawable/ic_address" />
+
+                                <TextView
+                                    android:id="@+id/tv_sale_address"
+                                    style="@style/AppTheme.ItemContentText"
+                                    android:text="125" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linear_voice_report"
+                                style="@style/HorizontalInLineItem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imageView_voice_report"
+                                    style="@style/AppTheme.Icon"
+                                    app:srcCompat="@drawable/icon_report" />
+
+                                <TextView
+                                    android:id="@+id/tv_voice_report"
+                                    style="@style/AppTheme.ItemContentText"
+                                    android:text="125" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_view_saleyard"
+                        style="@style/AppTheme.CardView"
+                        android:layout_marginTop="@dimen/vertical_item_margin">
+
+                        <com.theherdonline.ui.general.HerdButton
+                            android:id="@+id/button_view_saleyard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/page_margin_button"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="@dimen/page_margin_button"
+                            android:layout_marginBottom="20dp"
+                            app:HerdButton_icon="@drawable/button_arrow"
+                            app:HerdButton_text="@string/txt_view_saleyard"></com.theherdonline.ui.general.HerdButton>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_player"
+                        style="@style/AppTheme.CardView"
+                        android:layout_marginTop="@dimen/vertical_item_margin">
+
+                        <LinearLayout
+                            android:id="@+id/lineLayout_player"
+                            style="@style/AppTheme.LinearLayout.SubSection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    style="@style/AppTheme.TextOnEditView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|left"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:text="@string/txt_recording" />
+
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/button_play_audio"
+                                    android:layout_width="@dimen/audio_video_icon_size"
+                                    android:layout_height="@dimen/audio_video_icon_size"
+                                    android:tint="@color/colorIcon"
+                                    app:srcCompat="@drawable/button_playrecording" />
+
+                                <TextView
+                                    android:id="@+id/tv_player_status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="@string/txt_listen" />
+
+                                <TextView
+                                    android:id="@+id/tv_status"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|right"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:text="0.09"
+                                    android:textAlignment="gravity"
+                                    android:textColor="@android:color/black" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_report_video"
+                        style="@style/AppTheme.CardView"
+                        android:layout_marginTop="@dimen/vertical_item_margin">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_video"
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/txt_video"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/linear_upload_video"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:orientation="horizontal"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tv_video">
+
+                                <ImageView
+                                    android:id="@+id/button_upload_video"
+                                    android:layout_width="@dimen/audio_video_icon_size"
+                                    android:layout_height="@dimen/audio_video_icon_size"
+                                    android:tint="@color/colorIcon"
+                                    app:srcCompat="@drawable/button_videoupload" />
+
+                                <TextView
+                                    android:id="@+id/tv_upload_video"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="@string/txt_upload_video" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/imageView_video"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="16dp"
+                                android:adjustViewBounds="true"
+                                android:background="#00090909"
+                                android:scaleType="centerCrop"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintDimensionRatio="w,1:2"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv_video" />
+
+                            <ImageView
+                                android:id="@+id/imageView_play_video_button"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:padding="8dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView_video"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView_video"
+                                app:layout_constraintStart_toStartOf="@+id/imageView_video"
+                                app:layout_constraintTop_toTopOf="@+id/imageView_video"
+                                app:srcCompat="@drawable/button_play" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_view_Attachment"
+                        style="@style/AppTheme.CardView"
+                        android:layout_marginTop="@dimen/vertical_item_margin">
+
+                        <com.theherdonline.ui.general.HerdButton
+                            android:id="@+id/button_view_attachment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/page_margin_button"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="@dimen/page_margin_button"
+                            android:layout_marginBottom="20dp"
+                            app:HerdButton_icon="@drawable/button_arrow"
+                            app:HerdButton_text="View Market Report"></com.theherdonline.ui.general.HerdButton>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_report_NoteViews"
+                        style="@style/AppTheme.CardView"
+                        android:layout_marginTop="@dimen/vertical_item_margin">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/txt_notes" />
+
+                            <TextView
+                                android:id="@+id/tv_notesText"
+                                style="@style/AppTheme.ItemContentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="12dp"
+                                android:text="@string/txt_notes" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <include
+                        android:id="@+id/include_contact_card"
+                        layout="@layout/item_agent_card"
+                        android:visibility="visible"></include>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

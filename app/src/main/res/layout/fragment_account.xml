@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/AppTheme.CardView"
+        android:layout_marginTop="@dimen/vertical_item_margin">
+
+        <LinearLayout
+            android:id="@+id/linear_account_detail"
+            style="@style/AppTheme.LinearLayoutInfoCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/page_margin_left"
+                android:paddingTop="10dp"
+                android:paddingRight="@dimen/page_margin_left"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/txt_edit_account_details"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    style="@style/AppTheme.IconArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/linear_payment_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/page_margin_left"
+
+                android:paddingTop="10dp"
+                android:paddingRight="@dimen/page_margin_left"
+                android:paddingBottom="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/txt_payment_details"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    style="@style/AppTheme.IconArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/linear_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/page_margin_left"
+                android:paddingTop="10dp"
+
+                android:paddingRight="@dimen/page_margin_left"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/txt_logout"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    style="@style/AppTheme.IconArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

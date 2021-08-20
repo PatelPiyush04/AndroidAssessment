@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/circle_external"
+        android:layout_gravity="center"
+        android:src="@drawable/circle"/>
+
+    <ImageView
+        android:id="@+id/circle_internal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:src="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotation="0"
+        android:scaleType="matrix"
+        app:srcCompat="@drawable/circledivider" />
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:rotation="60"
+        app:srcCompat="@drawable/circledivider" />
+
+    <ImageView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotation="120"
+        android:visibility="gone"
+        android:src="@drawable/circledivider" />
+
+    <ImageView
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotation="180"
+        android:visibility="gone"
+        android:src="@drawable/circledivider" />
+
+    <ImageView
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotation="240"
+        android:visibility="gone"
+        android:src="@drawable/circledivider" />
+
+    <ImageView
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotation="300"
+        android:visibility="gone"
+        android:src="@drawable/circledivider" />
+
+</FrameLayout>

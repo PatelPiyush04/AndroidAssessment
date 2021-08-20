@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/vertical_item_margin"
+        style="@style/AppTheme.SaleyardCard">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/page_margin_horizontal"
+        android:paddingRight="@dimen/page_margin_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_bid_dec"
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:textColor="@color/colorTextDark"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_margin_horizontal"
+            android:layout_marginRight="@dimen/page_margin_horizontal"
+            android:text="The reserve is set at 300. The sell may select a winning bid at only moment. When the bid time" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_margin_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="@dimen/page_margin_horizontal"
+            android:text="@string/txt_bid_amount"
+            android:textColor="@color/colorTextDark"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+
+        <EditText
+            android:id="@+id/tv_bid_price"
+            style="@style/AppTheme.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/page_margin_right"
+            android:layout_marginLeft="@dimen/page_margin_horizontal"
+            android:layout_marginRight="@dimen/page_margin_horizontal"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:inputType="numberDecimal"
+            android:textAlignment="gravity"
+            android:hint="@string/txt_enter_bid_amount"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <com.theherdonline.ui.general.HerdButton
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_margin_button"
+            android:layout_marginRight="@dimen/page_margin_button"
+
+            android:layout_marginTop="20dp"
+            app:HerdButton_icon="@drawable/ic_button_inline_confirm"
+            app:HerdButton_text="@string/txt_submit_bid">
+
+        </com.theherdonline.ui.general.HerdButton>
+
+
+
+
+    </LinearLayout>
+</layout>

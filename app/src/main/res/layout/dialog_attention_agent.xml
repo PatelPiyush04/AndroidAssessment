@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="32dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_attention"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorDarkBlue"
+        android:layout_marginTop="10dp"
+         />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDarkBlue"
+        android:text="@string/txt_do_not_register"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:textSize="16dp"
+        android:textAlignment="gravity"
+        />
+
+
+    <com.theherdonline.ui.general.HerdButton
+        android:id="@+id/button_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        app:HerdButton_icon="@drawable/button_arrow"
+        app:HerdButton_text="@string/txt_go_to_website" />
+
+    <com.theherdonline.ui.general.HerdButton
+        android:id="@+id/button_contact_same"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        app:HerdButton_icon="@drawable/button_inline_call"
+        app:HerdButton_text="@string/txt_contact_sam" />
+
+</LinearLayout>

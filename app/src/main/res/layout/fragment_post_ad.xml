@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_toolbar"
+            layout="@layout/item_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:visibility="gone" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="1">
+
+            <LinearLayout
+                style="@style/AppTheme.LinearLayout.Section"
+                android:paddingTop="@dimen/card_margin_vertical">
+
+
+                <androidx.cardview.widget.CardView style="@style/AppTheme.CardView">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_part1"
+                        style="@style/AppTheme.LinearLayout.SubSection"
+                        android:layout_marginBottom="15dp">
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_title" />
+
+                        <EditText
+                            android:id="@+id/edit_title"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_title" />
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_description" />
+
+                        <EditText
+                            android:id="@+id/edit_description"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_description" />
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_price_type" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_spinner_price_type"
+                                style="@style/AppTheme.EditTextBoarder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_select_price_type" />
+
+                            <ImageView
+                                style="@style/AppTheme.IconArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginBottom="4dp"
+                                android:rotation="90"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+                        </FrameLayout>
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_offer_type" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_spinner_offer_type"
+                                style="@style/AppTheme.EditTextBoarder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_select_offer_type" />
+
+                            <ImageView
+                                style="@style/AppTheme.IconArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginBottom="4dp"
+                                android:rotation="90"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_priceView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_price_dollar" />
+
+                            <EditText
+                                android:id="@+id/edit_price"
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_enter_reserve_price"
+                                android:inputType="numberDecimal" />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/checkbox_ono"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="@string/txt_ono"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_lowPriceView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Low Price ($)" />
+
+                            <EditText
+                                android:id="@+id/edit_Lowprice"
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_enter_reserve_price"
+                                android:inputType="numberDecimal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_HighPriceView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="High Price ($)" />
+
+                            <EditText
+                                android:id="@+id/edit_Highprice"
+                                style="@style/AppTheme.EditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_enter_reserve_price"
+                                android:inputType="numberDecimal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/frameLayout_producer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_producer"
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_producer" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_spinner_producer"
+                                    style="@style/AppTheme.EditTextBoarder"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/txt_select_producer" />
+
+                                <ImageView
+                                    style="@style/AppTheme.IconArrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:layout_marginBottom="4dp"
+                                    android:rotation="90"
+                                    app:srcCompat="@drawable/ic_arrow_right" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_location" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_choose_a_location"
+                                style="@style/AppTheme.EditTextBoarder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_select_location" />
+
+                            <ImageView
+                                style="@style/AppTheme.IconArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginBottom="4dp"
+                                android:rotation="90"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+                        </FrameLayout>
+
+                        <!--                        <TextView
+                                                    style="@style/AppTheme.TextOnEditView"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/txt_start_time"
+                                                    tools:visibility="gone" />
+
+                                                <FrameLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    tools:visibility="gone">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_start_date"
+                                                        style="@style/AppTheme.EditTextBoarder"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:hint="@string/txt_select_start_date_time" />
+
+                                                    <ImageView
+                                                        style="@style/AppTheme.IconArrow"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|center_vertical"
+                                                        android:layout_marginBottom="4dp"
+                                                        android:rotation="90"
+                                                        app:srcCompat="@drawable/ic_arrow_right" />
+                                                </FrameLayout>-->
+
+
+                        <CheckBox
+                            android:id="@+id/checkbox_unerOffer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/t_under_offer" />
+
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_select_duration_day"
+                            android:visibility="gone" />
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_duration"
+                                style="@style/AppTheme.EditTextBoarder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_select_duration_day" />
+
+                            <ImageView
+                                style="@style/AppTheme.IconArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginBottom="4dp"
+                                android:rotation="90"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    style="@style/AppTheme.CardView"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        style="@style/AppTheme.LinearLayout.SubSection"
+                        android:layout_marginBottom="15dp">
+
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/t_stock_available_from" />
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_available_date"
+                                style="@style/AppTheme.EditTextBoarder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_select_available_date" />
+
+                            <ImageView
+                                style="@style/AppTheme.IconArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginBottom="4dp"
+                                android:rotation="90"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+                        </FrameLayout>
+
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/t_when_can_the_stock_be_picked_up" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkbox_ASAP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="@string/txt_asap_c" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_asapView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/t_earliest_date" />
+
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_earliestDate"
+                                    style="@style/AppTheme.EditTextBoarder"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/select_earliest_date" />
+
+                                <ImageView
+                                    style="@style/AppTheme.IconArrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:layout_marginBottom="4dp"
+                                    android:rotation="90"
+                                    app:srcCompat="@drawable/ic_arrow_right" />
+                            </FrameLayout>
+
+                            <TextView
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/t_latest_date" />
+
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_latestDate"
+                                    style="@style/AppTheme.EditTextBoarder"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/select_latest_date" />
+
+                                <ImageView
+                                    style="@style/AppTheme.IconArrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:layout_marginBottom="4dp"
+                                    android:rotation="90"
+                                    app:srcCompat="@drawable/ic_arrow_right" />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/AppTheme.CardView"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        style="@style/AppTheme.LinearLayout.SubSection"
+                        android:layout_marginBottom="15dp">
+
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_animal" />
+
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout_select_animal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_spinner_animal"
+                                style="@style/AppTheme.EditTextBoarder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_select_animal" />
+
+                            <ImageView
+                                style="@style/AppTheme.IconArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginBottom="4dp"
+                                android:rotation="90"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+                        </FrameLayout>
+
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_breed" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_spinner_breed"
+                                style="@style/AppTheme.EditTextBoarder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_select_breed" />
+
+                            <ImageView
+                                style="@style/AppTheme.IconArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginBottom="4dp"
+                                android:rotation="90"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv_quantity"
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_quantity" />
+
+                        <EditText
+                            android:id="@+id/edit_quantity"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_quantity"
+                            android:inputType="number" />
+
+
+                        <LinearLayout
+                            android:id="@+id/frameLayout_gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_gender" />
+
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_spinner_sex"
+                                    style="@style/AppTheme.EditTextBoarder"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/txt_select_gender" />
+
+                                <ImageView
+                                    style="@style/AppTheme.IconArrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:layout_marginBottom="4dp"
+                                    android:rotation="90"
+                                    app:srcCompat="@drawable/ic_arrow_right" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/frameLayout_pregnancy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_pregnancy"
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_pregnancy_status" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_spinner_pregnancy_status"
+                                    style="@style/AppTheme.EditTextBoarder"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/txt_select_pregnancy" />
+
+                                <ImageView
+                                    style="@style/AppTheme.IconArrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:layout_marginBottom="4dp"
+                                    android:rotation="90"
+                                    app:srcCompat="@drawable/ic_arrow_right" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_age_type" />
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout_age_unit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_age_unit"
+                                style="@style/AppTheme.EditTextBoarder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/txt_select_unit" />
+
+                            <ImageView
+                                style="@style/AppTheme.IconArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginBottom="4dp"
+                                android:rotation="90"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+                        </FrameLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_age"
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_min_age" />
+
+                        <EditText
+                            android:id="@+id/edit_min_age"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_age"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/tv_max_age"
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_max_age" />
+
+                        <EditText
+                            android:id="@+id/edit_max_age"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_age"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/tv_average_age"
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_average_age" />
+
+                        <EditText
+                            android:id="@+id/edit_average_age"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_age"
+                            android:inputType="number" />
+
+
+                        <TextView
+                            android:id="@+id/tv_weight_min_kg"
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_weight_min_kg" />
+
+                        <EditText
+                            android:id="@+id/edit_weight_min"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_min_weight"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/tv_weight_max_kg"
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_weight_max_kg" />
+
+                        <EditText
+                            android:id="@+id/edit_weight_max"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_max_weight"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/tv_weight_average"
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_weight_average" />
+
+                        <EditText
+                            android:id="@+id/edit_weight_average"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_enter_average_weight"
+                            android:inputType="number" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/AppTheme.TextOnEditView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_other_information" />
+
+                            <!-- <CheckBox
+                                 android:id="@+id/checkbox_detition"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_columnWeight="1"
+                                 android:text="@string/txt_dentition_c"
+                                 tools:visibility="gone" />-->
+
+                            <CheckBox
+                                android:id="@+id/checkbox_weighed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_weighed_c" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_eu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_eu_c" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_mouthed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_mouthed_c" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_msa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_msa_c" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_lpa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_lpa_c" />
+
+
+                            <CheckBox
+                                android:id="@+id/checkbox_organic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_organic_c" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_vendorBred"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_vendorbred_c" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_pcas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_pcas_c" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_grassFed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_grass_fed_c" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_antibioticFree"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_antibiotic_free_c" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_lifeTimeTraceable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_life_time_traceable_c" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_oneMark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_one_mark_c" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_hgpFree"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:text="@string/txt_hgp_free_c" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/AppTheme.CardView"
+                    android:layout_marginTop="15dp"
+                    app:cardUseCompatPadding="false">
+
+                    <LinearLayout
+                        style="@style/AppTheme.LinearLayout.SubSection"
+                        android:layout_marginBottom="15dp">
+
+                        <TextView
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/accessed_by" />
+
+                        <EditText
+                            android:id="@+id/edit_accessedBy"
+                            style="@style/AppTheme.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/t_enter_assessor" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/AppTheme.CardView"
+                    android:layout_marginTop="15dp"
+                    app:cardUseCompatPadding="false">
+
+                    <LinearLayout
+                        android:id="@+id/constraint_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_image"
+                            style="@style/AppTheme.TextOnEditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/txt_images_video"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/item_photo">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <com.theherdonline.ui.general.HerdButton
+                    android:id="@+id/button_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/page_margin_button"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/page_margin_button"
+                    android:layout_marginBottom="30dp"
+                    app:HerdButton_icon="@drawable/button_confirm"
+                    app:HerdButton_text="@string/txt_preview" />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

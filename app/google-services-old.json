@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "113974690496",
+    "firebase_url": "https://the-herd-ba528.firebaseio.com",
+    "project_id": "the-herd-ba528",
+    "storage_bucket": "the-herd-ba528.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113974690496:android:de1a6844e8c81f53",
+        "android_client_info": {
+          "package_name": "au.com.twomatesmedia.myapplicationnotificationtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113974690496-5ajd65vfn6arqjbab34sgrm06jud9hm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFDwfhTxRAeYlI0aGhNzJfYIByc-YNSFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113974690496-5ajd65vfn6arqjbab34sgrm06jud9hm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113974690496:android:2213ec5e18e85916",
+        "android_client_info": {
+          "package_name": "au.com.twomatesmedia.theherd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113974690496-5ajd65vfn6arqjbab34sgrm06jud9hm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFDwfhTxRAeYlI0aGhNzJfYIByc-YNSFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113974690496-5ajd65vfn6arqjbab34sgrm06jud9hm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113974690496:android:0e9e25cf3ee244d6",
+        "android_client_info": {
+          "package_name": "com.theherdonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113974690496-5ajd65vfn6arqjbab34sgrm06jud9hm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFDwfhTxRAeYlI0aGhNzJfYIByc-YNSFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113974690496-5ajd65vfn6arqjbab34sgrm06jud9hm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

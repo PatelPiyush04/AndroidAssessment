@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardView_my_data"
+            style="@style/AppTheme.SaleyardCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_my_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/list_divider"
+                android:dividerPadding="4dp"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_load_paddock_sale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/page_margin_left"
+                    android:paddingTop="8dp"
+                    android:paddingRight="@dimen/page_margin_left"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="@string/txt_load_paddock_sale"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        style="@style/AppTheme.IconArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:visibility="gone"
+                    android:id="@+id/frameLayout_load_prime_saleyard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/page_margin_left"
+                    android:paddingTop="8dp"
+                    android:paddingRight="@dimen/page_margin_left"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="@string/txt_load_prime_saleyard"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        style="@style/AppTheme.IconArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_load_store_saleyard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/page_margin_left"
+                    android:paddingTop="8dp"
+                    android:paddingRight="@dimen/page_margin_left"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="@string/txt_load_store_slash_feature_saleyard"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        style="@style/AppTheme.IconArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_load_market_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/page_margin_left"
+                    android:paddingTop="8dp"
+                    android:paddingRight="@dimen/page_margin_left"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="@string/txt_load_market_report"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        style="@style/AppTheme.IconArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_my_posts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/page_margin_left"
+                    android:paddingTop="8dp"
+                    android:paddingRight="@dimen/page_margin_left"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="@string/txt_my_posts"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        style="@style/AppTheme.IconArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_saved_ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/page_margin_left"
+                    android:paddingTop="8dp"
+                    android:paddingRight="@dimen/page_margin_left"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="@string/txt_saved_paddock_sales"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        style="@style/AppTheme.IconArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_my_bids"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:paddingLeft="@dimen/page_margin_left"
+                    android:paddingTop="8dp"
+                    android:paddingRight="@dimen/page_margin_left"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="@string/txt_my_bids"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        style="@style/AppTheme.IconArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_saved_auction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/page_margin_left"
+                    android:paddingTop="8dp"
+                    android:paddingRight="@dimen/page_margin_left"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="@string/txt_saved_saleyard_auctions"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        style="@style/AppTheme.IconArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_saved_prime_saleyard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/page_margin_left"
+                    android:paddingTop="8dp"
+                    android:visibility="gone"
+                    android:paddingRight="@dimen/page_margin_left"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:text="@string/txt_saved_prime_auctions"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        style="@style/AppTheme.IconArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</layout>

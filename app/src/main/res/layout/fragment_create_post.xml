@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.profile.UserProfileFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/item_toolbar"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/tool_bar_height" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_item_margin">
+                <EditText
+                    android:id="@+id/editText_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/vertical_item_padding"
+                    android:paddingRight="@dimen/vertical_item_padding"
+                    android:background="@drawable/editview_background"
+                    android:hint="@string/txt_what_would_you_like_to_post"
+                    android:gravity="top"
+                    android:minLines="10" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/AppTheme.CardView"
+                android:layout_marginTop="10dp"
+                app:cardUseCompatPadding="false">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraint_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_image"
+                        style="@style/AppTheme.TextOnEditView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/txt_attach_image"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="@dimen/vertical_item_margin"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="@dimen/vertical_item_margin"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/vertical_item_padding"
+
+                        android:paddingBottom="15dp"
+                        app:layout_constraintDimensionRatio="w,1:4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_image">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/constraintLayout_add_photo"
+                            android:layout_marginRight="@dimen/vertical_item_margin">
+
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/image_photo_place_holder"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="0dp"
+                                app:layout_constraintDimensionRatio="h,1:1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:layout_editor_absoluteY="30dp"
+                                tools:visibility="visible">
+
+
+                                <ImageView
+                                    android:id="@+id/image_photo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    />
+
+
+                                <ImageView
+                                    android:id="@+id/imageView_add_photo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorButton"
+                                    android:padding="10dp"
+                                    app:srcCompat="@drawable/ic_button_camera" />
+                            </androidx.cardview.widget.CardView>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.theherdonline.ui.general.HerdButton
+                android:id="@+id/button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/page_margin_button"
+                android:layout_marginRight="@dimen/page_margin_button"
+                android:layout_marginTop="15dp"
+                app:HerdButton_icon="@drawable/ic_button_inline_post"
+                app:HerdButton_text="@string/txt_submit" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</layout>

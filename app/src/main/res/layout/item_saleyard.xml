@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/AppTheme.ItemTitleText"
+                android:text="Listing Title Here - Pricerange" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/list_divider"
+                android:dividerPadding="@dimen/vertical_item_padding"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/vertical_item_padding"
+                    android:layout_marginRight="@dimen/vertical_item_padding">
+
+                    <TextView
+                        android:id="@+id/tv_saleyard_type"
+                        style="@style/AppTheme.SaleyardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_label"
+                        android:includeFontPadding="false"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/txt_paddock_sale"
+                        android:textSize="14dp" />
+
+
+                    <ImageView
+                        android:id="@+id/image_saved"
+                        style="@style/AppTheme.Icon.saved"
+                        android:layout_gravity="center_vertical|right"
+                        app:srcCompat="@drawable/ic_saved" />
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/vertical_item_padding"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <ImageView
+                        style="@style/AppTheme.Icon"
+                        app:srcCompat="@drawable/ic_date" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        style="@style/AppTheme.ItemContentText"
+                        android:text="Listing Title Here - Pricerange" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/vertical_item_padding"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <ImageView
+                        style="@style/AppTheme.Icon"
+                        app:srcCompat="@drawable/ic_quantity" />
+
+                    <TextView
+                        android:id="@+id/tv_headcount"
+                        style="@style/AppTheme.ItemContentText"
+                        android:text="Animal location address" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_animal_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/vertical_item_padding"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <ImageView
+                        android:id="@+id/imageView_animal"
+                        style="@style/AppTheme.Icon"
+                        app:srcCompat="@drawable/ic_address" />
+
+                    <TextView
+                        android:id="@+id/tv_animal"
+                        style="@style/AppTheme.ItemContentText"
+                        android:text="Animal location address" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/vertical_item_padding"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <ImageView
+                        style="@style/AppTheme.Icon"
+                        app:srcCompat="@drawable/ic_address" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_location"
+                            style="@style/AppTheme.ItemContentText"
+                            android:text="Mendooran" />
+
+                        <TextView
+                            android:id="@+id/tv_distance"
+                            style="@style/AppTheme.ItemContentText"
+                            android:text="Mendooran"
+                            android:textColor="@android:color/darker_gray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
