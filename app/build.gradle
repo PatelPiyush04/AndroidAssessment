@@ -35,6 +35,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
             buildConfigField "String", "CONFIG_API_SERVER", "\"https://herdonline.com.au/\""
+            buildConfigField "String", "CONFIG_API_SERVER", "\"https://herd.2mm.io/\""
+
             buildConfigField "String", "CONFIG_CLIENT_SECRET", "\"lMU0aIyGhRZgN45SEbvd4N961X0KXFFSLXyONihU\""
             buildConfigField "Integer", "CONFIG_CLIENT_ID", "7"
             buildConfigField "String", "CONFIG_GOOGLE_API_KEY", "\"AIzaSyCDR4xdq7FMtRyx-LNucWQie38xTlwtZyU\""
@@ -51,8 +53,8 @@ android {
 
         debug {
             // dev server
-            buildConfigField "String", "CONFIG_API_SERVER", "\"https://herdonline.com.au/\""
-            //buildConfigField "String", "CONFIG_API_SERVER", "\"https://herd.2mm.io/\""
+            //buildConfigField "String", "CONFIG_API_SERVER", "\"https://herdonline.com.au/\""
+            buildConfigField "String", "CONFIG_API_SERVER", "\"https://herd.2mm.io/\""
             buildConfigField "String", "CONFIG_CLIENT_SECRET", "\"lMU0aIyGhRZgN45SEbvd4N961X0KXFFSLXyONihU\""
             buildConfigField "Integer", "CONFIG_CLIENT_ID", "7"
             buildConfigField "String", "CONFIG_GOOGLE_API_KEY", "\"AIzaSyCDR4xdq7FMtRyx-LNucWQie38xTlwtZyU\""
